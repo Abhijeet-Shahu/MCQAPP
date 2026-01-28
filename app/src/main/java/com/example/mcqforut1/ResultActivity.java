@@ -30,20 +30,22 @@ public class ResultActivity extends AppCompatActivity {
         int score = getIntent().getIntExtra("score", 0);
         int total = getIntent().getIntExtra("total", 0);
 
-        if(score<35){
-            tvCongrats.setText("Khush mat ho fail Hai tu " + username + "!");
-        } else if (score>=35 && score<70) {
-            tvCongrats.setText("Itne marks me UT nhi niklega " + username + "!");
-        }
-        else if(score>=70 && score<=98){
-            tvCongrats.setText("Thik thak hai " + username + "!");
+        tvCongrats.setText("thik thak hai " + username + "!");
 
-        } else if (score == 99) {
-            tvCongrats.setText("You can do better " + username + "!");
-
-        } else if (score >= 100) {
-            tvCongrats.setText("Cheating kiya na " + username + "!");
-        }
+//        if(score<35){
+//            tvCongrats.setText("Khush mat ho fail Hai tu " + username + "!");
+//        } else if (score>=35 && score<70) {
+//            tvCongrats.setText("Itne marks me UT nhi niklega " + username + "!");
+//        }
+//        else if(score>=70 && score<=98){
+//            tvCongrats.setText("Thik thak hai " + username + "!");
+//
+//        } else if (score == 99) {
+//            tvCongrats.setText("You can do better " + username + "!");
+//
+//        } else if (score >= 100) {
+//            tvCongrats.setText("Cheating kiya na " + username + "!");
+//        }
 
         tvScore.setText("Score: " + score + " / " + total);
 
