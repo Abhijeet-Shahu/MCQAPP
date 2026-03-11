@@ -1,47 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_main"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".ResultActivity">
+    android:padding="24dp">
 
     <TextView
         android:id="@+id/tvCongrats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="🎉 Congratulations!"
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        android:text="Great effort"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Score: 0/0"
-        android:textSize="30sp"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginTop="14dp"
+        android:text="Score: 0 / 0"
+        android:textColor="#D8E8FF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnRetry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Retry Quiz"
-        android:textSize="30sp"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_card"
+        android:text="Retry Same Chapter"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnMainMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="Main Menu" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_option"
+        android:text="Back to Main"
+        android:textAllCaps="false"
+        android:textColor="#0E294B"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnViewProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_option"
+        android:text="View Progress"
+        android:textAllCaps="false"
+        android:textColor="#0E294B"
+        android:textStyle="bold" />
 
 </LinearLayout>

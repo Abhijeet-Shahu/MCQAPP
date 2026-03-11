@@ -6,931 +6,1331 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class QuestionBank {
-    public static ArrayList<Question> getMANquestions(){
+
+    public static ArrayList<Question> getETIQuestionsByChapter(int chapter) {
         ArrayList<Question> list = new ArrayList<>();
 
-        list.add(new Question(
-                "The function of management that involves setting goals and deciding on future actions is called?",
-                new String[]{"Organizing","Planning","Leading","Controlling"},
-                1
-        ));
-
-        list.add(new Question(
-                "The primary objective of management in an organization is to achieve?",
-                new String[]{"Employee promotions","Higher salaries for managers","Business goals efficiently","Product discounts for customers"},
-                2
-        ));
-
-        list.add(new Question(
-                "The characteristic of management that emphasizes its relevance across industries, governments, and NGOs is known as?",
-                new String[]{"Universal application","Profit maximization","Workforce specialization","Limited adaptability"},
-                0
-        ));
-
-        list.add(new Question(
-                "The management function that ensures tasks are completed as planned by monitoring and correcting deviations is?",
-                new String[]{"Organizing","Planning","Leading","Controlling"},
-                3
-        ));
-
-        list.add(new Question(
-                "The process of arranging resources like manpower, materials, and finances in a structured manner refers to",
-                new String[]{"Organizing","Decision-making","Innovation","Negotiation"},
-                0
-        ));
-
-        list.add(new Question(
-                "Scientific Management aims to improve workforce efficiency using approach?",
-                new String[]{"Traditional managerial discretion","Scientific methods and logical principles","Employee intuition and experience","Personal opinions of managers"},
-                1
-        ));
-
-        list.add(new Question(
-                "is regarded as the Father of Scientific Management?",
-                new String[]{"Henri Fayol","F.W. Taylor","Elton Mayo","Max Weber"},
-                1
-        ));
-
-        list.add(new Question(
-                "\"Mental Revolution\" in Taylor's Scientific Management refers to a shift in thinking between?",
-                new String[]{"Management and workers","Customers and suppliers","Government and industry","Competitors and partners"},
-                0
-        ));
-
-        list.add(new Question(
-                "The principle that focuses on employees being assigned work according to their mental and physical capabilities is called?",
-                new String[]{"Unity of Command","Development of Workers to their Greatest Efficiency and Prosperity","Centralization of Authority","Stability of Tenure"},
-                1
-        ));
-
-        list.add(new Question(
-                "The principle that suggests employees should report to only one superior is called?",
-                new String[]{"Unity of Direction","Scalar Chain","Unity of Command","Centralization"},
-                2
-        ));
-
-        list.add(new Question(
-                "principle highlights the need for fair treatment and respect for all employees?",
-                new String[]{"Discipline","Authority and Responsibility","Equity","Initiative"},
-                2
-        ));
-
-        list.add(new Question(
-                "According to Fayol, principle ensures employees feel secure in their jobs, leading to better performance?",
-                new String[]{"Stability of Tenure","Order","Division of Work","Esprit de Corps"},
-                0
-        ));
-
-        list.add(new Question(
-                "The principle that promotes team spirit and unity among employees is called?",
-                new String[]{"Scalar Chain","Initiative","Remuneration","Esprit de Corps"},
-                3
-        ));
-
-        list.add(new Question(
-                "A factory replaces its outdated production techniques with scientifically tested methods to reduce waste and increase output This best represents .... principle",
-                new String[]{"Science, Not Rule of Thumb","Unity of Command","Initiative","Centralization"},
-                0
-        ));
-
-        list.add(new Question(
-                "A company with multiple departments encourages employees to coordinate their efforts instead of working separately. This best represents ____ principle.",
-                new String[]{"Division of Work","Unity of Direction","Authority and Responsibility","Remuneration"},
-                1
-        ));
-
-        list.add(new Question(
-                "Management is intangible because",
-                new String[]{"It cannot be seen but its results are visible","It is always visible","It depends only on material","It is not measurable"},
-                0
-        ));
-
-        list.add(new Question(
-                "Staffing ensures",
-                new String[]{"Maximum confusion","Skilled and motivated workforce","Poor communication","Low morale"},
-                1
-        ));
-
-        list.add(new Question(
-                "......level of management is responsible for the survival and welfare of an organization.",
-                new String[]{"Middle Level Management","Top Level Management","Lower Level Management","Supervisory Level Management"},
-                1
-        ));
-
-        list.add(new Question(
-                "...... acts as a link between the top and lower levels of management.",
-                new String[]{"Supervisory Level Management","Middle Level Management","Board of Directors","Operational Workers"},
-                1
-        ));
-
-        list.add(new Question(
-                "......is responsible for direct interaction with the workforce.",
-                new String[]{"Middle Level Management","Top Level Management","Lower Level Management","Strategic Management Team"},
-                2
-        ));
-
-        list.add(new Question(
-                "......is a function of lower-level management.",
-                new String[]{"Formulating company vision","Representing workers' grievances","Setting company-wide financial policies","Approving mergers and acquisitions"},
-                1
-        ));
-
-        list.add(new Question(
-                "......describes the role of operational managers in task assignment.",
-                new String[]{"They only assign tasks without supervision","They guide workers and assist in problem-solving","They focus on financial planning instead of task allocation","They avoid daily planning activities"},
-                1
-        ));
-
-        list.add(new Question(
-                "Negotiation means",
-                new String[]{"Forcing others to accept your decision","A discussion to reach a mutually beneficial agreement","Avoiding communication with others","Arguing until one party gives up"},
-                1
-        ));
-
-        list.add(new Question(
-                "......refers to the ability to recognize and understand personal emotions, thoughts, and values.",
-                new String[]{"Self-motivation","Self-discipline","Self-awareness","Goal setting"},
-                2
-        ));
-
-        list.add(new Question(
-                "The ability to control impulses and follow through on commitments is called",
-                new String[]{"Self-discipline","Self-awareness","Self-motivation","Time management"},
-                0
-        ));
-
-        list.add(new Question(
-                "motivation comes from within and is driven by personal interest or satisfaction.",
-                new String[]{"Extrinsic","Intrinsic","Values-based","External"},
-                1
-        ));
-
-        list.add(new Question(
-                "The letter \"S\" in SMART goal setting represents",
-                new String[]{"Specific","Speed","Smart","Supportive"},
-                0
-        ));
-
-        list.add(new Question(
-                "The skill that helps individuals use time efficiently is",
-                new String[]{"Self-awareness","Time management","Stress management","Decision-making"},
-                1
-        ));
-
-        list.add(new Question(
-                "Work-life balance ensures individuals allocate adequate time for",
-                new String[]{"Only professional tasks","Work and family","Work, family, health, and leisure","Office work only"},
-                2
-        ));
-
-        list.add(new Question(
-                "Excessive multitasking leads to",
-                new String[]{"Increased focus","More efficiency","Mental fatigue","Better decision-making"},
-                2
-        ));
-
-        list.add(new Question(
-                "The reason self-motivation is important in self-management is",
-                new String[]{"It helps in setting unrealistic goals","It allows individuals to stay driven toward achieving goals","It removes the need for discipline","It forces people to work continuously"},
-                1
-        ));
-
-        list.add(new Question(
-                "The impact of stress management on an individual includes",
-                new String[]{"Eliminating stress completely","Developing healthy coping mechanisms","Increasing workplace conflicts","Avoiding challenges"},
-                1
-        ));
-
-        list.add(new Question(
-                "The benefit of goal setting in self-management is",
-                new String[]{"Providing direction and focus","Ensuring success without effort","Removing the need for decision-making","Encouraging procrastination"},
-                0
-        ));
-
-        list.add(new Question(
-                "The way to maintain proper work-life balance includes",
-                new String[]{"Focusing only on professional responsibilities","Working extra hours daily","Setting boundaries and managing time effectively","Ignoring personal well-being"},
-                2
-        ));
-
-        list.add(new Question(
-                "A drawback of multitasking is",
-                new String[]{"Improving productivity","Enhancing accuracy in complex tasks","Reducing focus and leading to errors","Ensuring perfect time management"},
-                2
-        ));
-
-        list.add(new Question(
-                "The ability to reach mutually beneficial agreements through discussion and compromise is called......",
-                new String[]{"Leadership","Conflict resolution","Negotiation skills","Feedback"},
-                2
-        ));
-
-        list.add(new Question(
-                "The managerial skill that involves leading, coordinating, and motivating a group is",
-                new String[]{"Conflict resolution","Team management","Leadership","Feedback"},
-                2
-        ));
-
-        list.add(new Question(
-                "The process of handling disputes in a fair and constructive manner is known as",
-                new String[]{"Feedback","Conflict resolution","Leadership","Team management"},
-                1
-        ));
-
-        list.add(new Question(
-                "Providing constructive criticism to help employees improve performance is part of......",
-                new String[]{"Leadership","Feedback","Negotiation","Conflict resolution"},
-                1
-        ));
-
-        list.add(new Question(
-                "The managerial skill that includes inspiring, guiding, and influencing others is",
-                new String[]{"Team management","Conflict resolution","Leadership","Negotiation skills"},
-                2
-        ));
-
-        list.add(new Question(
-                "The reason negotiation skills are important in business is",
-                new String[]{"Ensuring only one party benefits","Preventing communication among stakeholders","Achieving agreements that satisfy all parties","Avoiding business discussions"},
-                2
-        ));
-
-        list.add(new Question(
-                "The impact of strong team management on an organization includes......",
-                new String[]{"Decreasing productivity","Improving efficiency and employee satisfaction","Increasing workplace conflicts","Removing the need for leadership"},
-                1
-        ));
-
-        list.add(new Question(
-                "A manager handling a dispute between two employees by redistributing workload fairly demonstrates",
-                new String[]{"Conflict resolution","Negotiation","Leadership","Team management"},
-                0
-        ));
-
-        list.add(new Question(
-                "Constructive feedback should be",
-                new String[]{"Negative and discouraging","Specific, timely, and solution-focused","Avoided in a professional setting","General and vague"},
-                1
-        ));
-
-        list.add(new Question(
-                "The leadership quality that involves setting a vision and leading by example contributes to .",
-                new String[]{"Employee disengagement","Organizational success","Increased conflicts","Lack of motivation"},
-                1
-        ));
-
-        list.add(new Question(
-                "Who authored the Arthashastra?",
-                new String[]{"Megasthenes","Ashoka","Kautilya (Chanakya)","Kalidas"},
-                2
-        ));
-
-        list.add(new Question(
-                "Delhi Sultanate's finance department was known as",
-                new String[]{"Diwan-i-Arz","Diwan-i-Wizarat","Diwan-i-Insha","Diwan-i-Riyasat"},
-                1
-        ));
-
-        list.add(new Question(
-                "Management Means",
-                new String[]{"Getting things done by oneself","Getting things done through others efficiently and effectively","Supervising workers only","Planning for the future only"},
-                1
-        ));
-
-        list.add(new Question(
-                "Who is known as the Father of Scientific Management?",
-                new String[]{"Henry Fayol","Peter Drucker","F.W. Taylor","Elton Mayo"},
-                2
-        ));
-
-        list.add(new Question(
-                "The term \"Universal Application\" in management means",
-                new String[]{"Management applies only to business organizations","Management applies to all types of organizations","Management is limited to top executives","Management principles change completely in each field"},
-                1
-        ));
-
-        list.add(new Question(
-                "primary goal of brainstorming.",
-                new String[]{"To find a single best solution","To generate a large number of ideas without judgment","To analyze existing ideas systematically","To limit creativity"},
-                1
-        ));
-
-        list.add(new Question(
-                "...... is NOT a rule of traditional brainstorming.",
-                new String[]{"Encourage wild ideas","Defer judgment","Critique ideas immediately","Aim for quantity over quality"},
-                2
-        ));
-
-        list.add(new Question(
-                "The checklist technique is primarily used to.",
-                new String[]{"Generate random ideas","Evaluate ideas systematically using a predefined list of questions","Reverse an existing idea for better innovation","Reduce the number of ideas generated in brainstorming"},
-                1
-        ));
-
-        list.add(new Question(
-                "...... is true about reverse brainstorming.",
-                new String[]{"It is used to generate only positive ideas","It focuses on identifying ways to solve a problem","It involves identifying ways to create problems rather than solving them","It limits the number of participants in idea generation"},
-                2
-        ));
-
-        list.add(new Question(
-                "Morphological analysis is best suited for problems that.",
-                new String[]{"Have only one correct solution","Can be broken down into independent parameters","Do not require creative input","Are solved best using a checklist"},
-                1
-        ));
-
-        list.add(new Question(
-                "In the Six Thinking Hats technique, the Green Hat represents:",
-                new String[]{"Creativity and new ideas","Emotional perspective","Critical judgment","Facts and data"},
-                0
-        ));
-
-        list.add(new Question(
-                "...... is the role of the Black Hat in the Six Thinking Hats method.",
-                new String[]{"To generate new ideas","To look at the problem with optimism","To identify risks, weaknesses, and potential problems","To encourage emotional viewpoints"},
-                2
-        ));
-
-        list.add(new Question(
-                "...... creativity technique involves systematically varying parameters of a problem to explore new solutions.",
-                new String[]{"Brainstorming","Morphological analysis","Checklist method","Reverse brainstorming"},
-                1
-        ));
-
-        list.add(new Question(
-                "In the Six Thinking Hats method, the Red Hat is associated with.",
-                new String[]{"Logic and facts","Caution and risk assessment","Emotions and intuition","Creativity and innovation"},
-                2
-        ));
-
-        list.add(new Question(
-                "...... is main advantage of using the checklist technique in creativity.",
-                new String[]{"It limits the number of ideas for better focus","It encourages rapid and random idea generation","It provides a structured way to refine and expand ideas","It prevents mistakes by following strict rules"},
-                2
-        ));
-
-        list.add(new Question(
-                "is the first stage in the New Product Development (NPD) process.",
-                new String[]{"Market Testing","Idea Generation","Product Development","Commercialization"},
-                1
-        ));
-
-        list.add(new Question(
-                "is NOT a source of idea generation for new products.",
-                new String[]{"Customers","Competitors","Government Regulations","Employee Layoffs"},
-                3
-        ));
-
-        list.add(new Question(
-                "is the primary goal of concept testing in NPD.",
-                new String[]{"To test the final product in the market","To gather feedback on the product idea from potential customers","To create a prototype for testing","To analyze production costs"},
-                1
-        ));
-
-        list.add(new Question(
-                "stage in the NPD process involves developing a working prototype.",
-                new String[]{"Idea Screening","Concept Development","Business Analysis","Product Development"},
-                3
-        ));
-
-        list.add(new Question(
-                "The final stage of the NPD process is:",
-                new String[]{"Commercialization","Product Testing","Business Analysis","Idea Screening"},
-                0
-        ));
-
-        list.add(new Question(
-                "A company uses a controlled launch in a limited market to evaluate product performance before full-scale introduction. This process is called:",
-                new String[]{"Market Penetration","Test Marketing","Product Development","Idea Screening"},
-                1
-        ));
-
-        list.add(new Question(
-                "is a risk associated with new product development.",
-                new String[]{"High development costs","Market acceptance uncertainty","Competitive imitation","All of the above"},
-                3
-        ));
-
-        list.add(new Question(
-                "is the primary goal of change management in an organization?",
-                new String[]{"To eliminate the need for change","To manage and implement change smoothly and effectively","To resist and slow down changes in the company","To reduce employee involvement in change initiatives"},
-                1
-        ));
-
-        list.add(new Question(
-                "of the following is NOT a stage in Kurt Lewin's Change Management Model.",
-                new String[]{"Unfreezing","Freezing","Changing","Refreezing"},
-                1
-        ));
-
-        list.add(new Question(
-                "According to Kotter's 8-Step Change Model, the first step in implementing change is to:",
-                new String[]{"Develop a vision for change","Establish a sense of urgency","Communicate the change vision","Empower employees for broad-based action"},
-                1
-        ));
-
-        list.add(new Question(
-                "Resistance to change in organizations can be caused by",
-                new String[]{"Fear of the unknown","Lack of trust in leadership","Poor communication","All of the above"},
-                3
-        ));
-
-        list.add(new Question(
-                "In the ADKAR Model of Change, \"D\" stand for.",
-                new String[]{"Development","Decision","Desire","Direction"},
-                2
-        ));
-
-        list.add(new Question(
-                "is a strategy to overcome resistance to change.",
-                new String[]{"Avoiding employee feedback","Communicating the benefits of change clearly","Implementing changes without informing employees","Forcing employees to accept change"},
-                1
-        ));
-
-        list.add(new Question(
-                "best defines Organizational Change.",
-                new String[]{"A minor shift in daily operations","The process of modifying structures, strategies, and procedures within an organization","A temporary adjustment that does not impact business goals","A method to avoid market competition"},
-                1
-        ));
-
-        list.add(new Question(
-                "Change agents in an organization are responsible for.",
-                new String[]{"Preventing change from happening","Supporting and leading the change process","Resisting management decisions","Only informing employees about change without involvement"},
-                1
-        ));
-
-        list.add(new Question(
-                "is the primary role of product management.",
-                new String[]{"Managing employees in production units","Overseeing the development, launch, and success of a product","Handling only the marketing of a product","Ensuring that products are produced at the lowest cost"},
-                1
-        ));
-
-        list.add(new Question(
-                "is best describes product management.",
-                new String[]{"A process focused only on product design","A multidisciplinary function that involves strategy, development, and marketing","A department responsible for supply chain management","A function that works only with sales teams"},
-                1
-        ));
-
-        list.add(new Question(
-                "is primarily responsible for defining the vision and strategy of a product.",
-                new String[]{"Product Manager","Sales Manager","Finance Manager","HR Manager"},
-                0
-        ));
-
-        list.add(new Question(
-                "...... is NOT a key responsibility of a product manager?",
-                new String[]{"Defining product vision","Conducting market research","Setting financial policies","Coordinating with development teams"},
-                2
-        ));
-
-        list.add(new Question(
-                "A product lifecycle includes. stages.",
-                new String[]{"Introduction, Growth, Maturity, Decline","Planning, Execution, Profit, Loss","Research, Development, Selling, Disposal","Creation, Testing, Selling, Discontinuation"},
-                0
-        ));
-
-        list.add(new Question(
-                "Sustainable product design primarily aims to.",
-                new String[]{"Reduce environmental impact while ensuring profitability","Maximize short-term profits","Use only expensive eco-friendly materials","Increase production speed regardless of consequences"},
-                0
-        ));
-
-        list.add(new Question(
-                "...... is a key factor in designing a sustainable product.",
-                new String[]{"Durability and recyclability","Short-term cost savings","Increasing packaging waste","Focusing only on aesthetics"},
-                0
-        ));
-
-        list.add(new Question(
-                "In sustainable design, the term \"Cradle-to-Cradle\" refers to.",
-                new String[]{"A design approach that ensures products are fully recyclable or reusable","A method for reducing production costs","A sales strategy for increasing profits","A process for handling product failures"},
-                0
-        ));
-
-        list.add(new Question(
-                "...... is NOT a strategic step in sustainable product design.",
-                new String[]{"Using renewable materials","Minimizing energy consumption","Increasing planned obsolescence","Implementing eco-friendly manufacturing processes"},
-                2
-        ));
-
-        list.add(new Question(
-                "The concept of a Circular Economy in product management focuses on.",
-                new String[]{"Reducing, reusing, and recycling materials","Increasing product disposal rates","Creating products that cannot be repaired","Selling products only in limited markets"},
-                0
-        ));
-
-        list.add(new Question(
-                "Life Cycle Assessment (LCA) is important in sustainable product design because.",
-                new String[]{"It helps analyze the environmental impact of a product from production to disposal","It focuses only on marketing strategies","It ensures the product is designed at the lowest cost possible","It is used only for government regulations"},
-                0
-        ));
-
-        list.add(new Question(
-                "...... best describes Eco-Design in product management.",
-                new String[]{"A design process that integrates environmental considerations into every stage of a product's lifecycle","A method to reduce product quality for cost savings","A short-term strategy to improve sales","A focus on using only natural colors in product packaging"},
-                0
-        ));
-
-        list.add(new Question(
-                "...... is an example of an eco-friendly packaging approach.",
-                new String[]{"Using single-use plastic for cost reduction","Designing packaging that is biodegradable and reusable","Increasing package size to make products look bigger","Adding extra layers of plastic wrapping for branding"},
-                1
-        ));
-
-        list.add(new Question(
-                "...... is the purpose of conducting market research in sustainable product management.",
-                new String[]{"To understand consumer preferences and sustainability expectations","To determine the cheapest way to produce a product","To focus only on product pricing strategies","To reduce investment in research and development"},
-                0
-        ));
-
-        list.add(new Question(
-                "...... best describes Extended Producer Responsibility (EPR).",
-                new String[]{"Manufacturers are responsible for the entire lifecycle of their products, including disposal and recycling","Consumers are solely responsible for recycling their purchases","Companies are not required to consider the environmental impact of their products","EPR is a voluntary program with no legal implications"},
-                0
-        ));
-
-        list.add(new Question(
-                "Reverse Brainstorming starts by asking",
-                new String[]{"How to solve the problem fastest?","How to cause or worsen the problem?","Who is to blame?","How to avoid any ideas?"},
-                1
-        ));
-
-        list.add(new Question(
-                "Morphological Analysis was developed by",
-                new String[]{"Peter Drucker","Fritz Zwicky","Alex Osborn","Tony Buzan"},
-                1
-        ));
-
-        list.add(new Question(
-                "First step in Morphological Analysis",
-                new String[]{"Create ads","Define the problem clearly","Set selling price","Conduct market survey only"},
-                1
-        ));
-
-        list.add(new Question(
-                "In Six Thinking Hats, which hat is for facts and data?",
-                new String[]{"Red","Yellow","White","Green"},
-                2
-        ));
-
-        list.add(new Question(
-                "In Six Thinking Hats, the Black Hat focuses on",
-                new String[]{"Emotions","Risks and cautions","Creativity","Process control"},
-                1
-        ));
-
-        list.add(new Question(
-                "Which stage is NOT typically part of NPD?",
-                new String[]{"Idea generation","Concept testing","Product launch","Annual tax audit"},
-                3
-        ));
-
-        list.add(new Question(
-                "Project management primarily helps organizations to",
-                new String[]{"Increase paperwork","Plan, organize and complete projects successfully","Delay project deadlines","Avoid teamwork"},
-                1
-        ));
-
-        list.add(new Question(
-                "The first step in successful project management is",
-                new String[]{"Execution","Planning and goal setting","Project closure","Marketing"},
-                1
-        ));
-
-        list.add(new Question(
-                "A Gantt chart is used for ______",
-                new String[]{"Scheduling and tracking progress of activities","Budget estimation only","Identifying project risks","Managing only manpower"},
-                0
-        ));
-
-        list.add(new Question(
-                "Who developed the Gantt Chart?",
-                new String[]{"Henry Gantt","Frederick Taylor","Peter Drucker","Elton Mayo"},
-                0
-        ));
+        if (chapter == 3) {
+            addChapter3(list);
+        } else if (chapter == 4) {
+            addChapter4(list);
+        } else if (chapter == 5) {
+            addChapter5(list);
+        }
 
         Collections.shuffle(list);
         return list;
     }
-    public static ArrayList<Question> getETIquestions(){
-        ArrayList<Question> list = new ArrayList<>();
 
-        // Q1
+    private static void addChapter3(ArrayList<Question> list) {
         list.add(new Question(
-                "Who is known as the father of Artificial Intelligence?",
-                new String[]{"Alan Turing", "Andrew Ng", "Geoffrey Hinton", "John McCarthy"},
-                3
-        ));
-
-// Q2
-        list.add(new Question(
-                "'Things' in IoT refers to",
-                new String[]{"Only computers", "Websites", "Any physical object with sensors and connectivity", "Smartphones only"},
-                2
-        ));
-
-// Q3
-        list.add(new Question(
-                "Which test did ELIZA successfully pass?",
-                new String[]{"Customer Service Test", "Medical Diagnosis Test", "Turing Test", "Financial Advisor Test"},
-                2
-        ));
-
-// Q4
-        list.add(new Question(
-                "Blockchain is a",
-                new String[]{"Centralized ledger", "Cryptocurrency", "Currency", "Distributed ledger on a peer-to-peer network"},
-                3
-        ));
-
-// Q5
-        list.add(new Question(
-                "Which actuator converts electrical energy into rotational motion?",
-                new String[]{"Relay", "DC motor", "LDR", "Thermistor"},
-                1
-        ));
-
-// Q6
-        list.add(new Question(
-                "An example of supervised learning is",
-                new String[]{"Hierarchical clustering", "Deep Learning", "Classifying emails as spam", "Machine Learning"},
-                2
-        ));
-
-// Q6 (Second part - physical design question)
-        list.add(new Question(
-                "Which of the following is part of the physical design of IoT?",
-                new String[]{"IoT protocols", "Sensors and actuators", "Cloud databases", "Data analytics"},
-                1
-        ));
-
-// Q7
-        list.add(new Question(
-                "Which IoT component is responsible for performing actions?",
-                new String[]{"Sensor", "Controller", "Actuator", "Gateway"},
-                2
-        ));
-
-// Q8
-        list.add(new Question(
-                "What is the first block in a blockchain called?",
-                new String[]{"Root block", "Prime block", "Initial block", "Genesis block"},
-                3
-        ));
-
-// Q9
-        list.add(new Question(
-                "Which AI technique is best suited for X-ray based disease diagnosis?",
-                new String[]{"NLP", "Expert System", "Reinforcement Learning", "Deep Learning with Computer Vision"},
-                3
-        ));
-
-// Q10
-        list.add(new Question(
-                "Which layer of IoT architecture handles data routing?",
-                new String[]{"Application layer", "Perception layer", "Storage layer", "Network layer"},
-                3
-        ));
-
-// Q11
-        list.add(new Question(
-                "Which improves deep learning model performance?",
-                new String[]{"Less training data", "Manual feature selection", "Fixed dataset", "More data and training time"},
-                3
-        ));
-
-// Q12
-        list.add(new Question(
-                "6LOWPAN works with the _____ link layer protocol.",
-                new String[]{"802.15.4", "802.16", "802.11", "802.3"},
+                "Which industry uses blockchain for secure cross-border payments-",
+                new String[]{"Healthcare", "Finance", "Supply Chain", "Gaming"},
                 0
         ));
 
-// Q13
         list.add(new Question(
-                "What links a blockchain block to the previous block?",
-                new String[]{"Timestamp", "User ID", "Transaction amount", "Previous block hash"},
-                3
-        ));
-
-// Q14
-        list.add(new Question(
-                "Activation function in neural networks is used to:",
-                new String[]{"Normalize weights", "Connect layers", "Summarize inputs", "Introduce non-linearity"},
-                3
-        ));
-
-// Q15
-        list.add(new Question(
-                "Next Generation Network (NGN) is primarily based on:",
-                new String[]{"Circuit-switching", "Packet-switched IP networks", "Morse code", "Analog communication"},
+                "Blockchain improves supply chains by ........",
+                new String[]{"Reducing transparency", "Tracking products from origin to consumer", "Hiding product details", "Increasing fraud risk"},
                 1
         ));
 
-// Q16
         list.add(new Question(
-                "Neural networks are inspired by",
-                new String[]{"Human brain neurons", "Computer circuits", "Statistical models", "Logistic regression"},
+                "In healthcare, blockchain helps by ........",
+                new String[]{"Making all patient data public", "Securely storing and sharing medical records", "Slowing down data access", "Reducing data collection"},
+                1
+        ));
+
+        list.add(new Question(
+                "Blockchain offers gamers the ability to ........",
+                new String[]{"Own in-game assets as NFTs", "Cheat on games", "Avoid transparency", "Use centralized servers"},
                 0
         ));
 
-// Q17
         list.add(new Question(
-                "Which AI concept is mainly used in ChatGPT?",
-                new String[]{"Robotics", "Expert Systems", "Computer Vision", "NLP with Transformers"},
-                3
-        ));
-
-// Q18 (First)
-        list.add(new Question(
-                "Which blockchain feature ensures data cannot be altered?",
-                new String[]{"Digital wallet", "Private keys", "Miner ID", "Immutability"},
-                3
-        ));
-
-// Q18 (Second)
-        list.add(new Question(
-                "Which of the following is NOT a sensor?",
-                new String[]{"Accelerometer", "Gyroscope", "Thermistor", "Relay"},
-                3
-        ));
-
-// Q19
-        list.add(new Question(
-                "Deepfakes are generated using:",
-                new String[]{"Decision Trees", "Reinforcement Learning", "CNN only", "GANs"},
-                3
-        ));
-
-// Q20
-        list.add(new Question(
-                "Which IoT characteristic allows devices to configure themselves?",
-                new String[]{"Unique identity", "Artificial Intelligence", "Self-configuring", "Manual setup"},
-                2
-        ));
-
-// Q21
-        list.add(new Question(
-                "Which AI attack slightly modifies input data to fool the model?",
-                new String[]{"Poisoning attack", "Privacy attack", "Model tampering", "Evasion attack"},
-                3
-        ));
-
-// Q22
-        list.add(new Question(
-                "A key characteristic of NGN is:",
-                new String[]{"No support for multimedia", "Quality of Service (QoS)", "Static switching", "Manual routing"},
+                "Cross-border payments on blockchain are ........",
+                new String[]{"Slow and costly", "Faster and cheaper due to lack of intermediaries", "Only for cryptocurrency", "Not traceable"},
                 1
         ));
 
-// Q23
         list.add(new Question(
-                "Who invented blockchain technology?",
-                new String[]{"Elon Musk", "Satoshi Nakamoto", "Bill Gates", "Tim Berners-Lee"},
-                1
-        ));
-
-// Q24 (First)
-        list.add(new Question(
-                "What does a consensus mechanism do in blockchain?",
-                new String[]{"Deletes blocks", "Creates private keys", "Hides transactions", "Ensures agreement on blockchain data"},
-                3
-        ));
-
-// Q25 (First)
-        list.add(new Question(
-                "Which system has a single point of failure?",
-                new String[]{"Blockchain", "Traditional centralized system", "Peer-to-peer network", "Decentralized system"},
-                1
-        ));
-
-// Q24 (Second - ML for fraud detection)
-        list.add(new Question(
-                "Which ML approach is suitable for fraud detection in banks?",
-                new String[]{"Reinforcement learning", "GANs", "Self-aware AI", "Unsupervised learning"},
-                3
-        ));
-
-// Q25 (Second - ELIZA test repetition)
-        list.add(new Question(
-                "What test did ELIZA successfully pass?",
-                new String[]{"Medical Diagnosis Test", "Customer Service Test", "Turing Test", "Financial Advisor Test"},
+                "Which of the following Industry can use blockchain Technology-",
+                new String[]{"Logistics and supply chain", "Medical records", "Financial Market", "All of these"},
                 2
         ));
 
-// Q26 (First - cloud service for IoT)
         list.add(new Question(
-                "Which cloud service model is commonly used for IoT analytics?",
-                new String[]{"IaaS", "SaaS", "CDP", "PaaS"},
-                3
-        ));
-
-// Q26 (Second - deep learning advantage)
-        list.add(new Question(
-                "Which deep learning advantage is most significant?",
-                new String[]{"Easy interpretability", "Low resource usage", "Manual feature engineering", "High accuracy in complex tasks"},
-                3
-        ));
-
-// Q27
-        list.add(new Question(
-                "Which blockchain type is suitable for enterprise privacy?",
-                new String[]{"Public blockchain", "Hybrid blockchain", "Consortium blockchain", "Private blockchain"},
-                3
-        ));
-
-// Q28
-        list.add(new Question(
-                "Which communication API uses request-response model?",
-                new String[]{"WebSocket", "WebSocket-based", "MQTT", "REST-based API"},
-                3
-        ));
-
-// Q29
-        list.add(new Question(
-                "Layers between input and output layers in neural networks are called:",
-                new String[]{"Data layers", "Output layers", "Input layers", "Hidden layers"},
-                3
-        ));
-
-// Q30
-        list.add(new Question(
-                "The combination of 5G and IoT is mainly used for:",
-                new String[]{"Manual switching", "Slower networks", "Faster printing", "Automation and smart connectivity"},
-                3
-        ));
-
-// Q31
-        list.add(new Question(
-                "Which statement fits 'Weak AI' or Narrow AI?",
-                new String[]{"Has general human-level intelligence.", "Excels at multiple tasks simultaneously.", "Performs dedicated tasks within a limited scope.", "Can reason like a human."},
-                2
-        ));
-
-// Q32
-        list.add(new Question(
-                "_____ is an example of supervised learning.",
-                new String[]{"Machine Learning", "Deep Learning", "Classifying e-mails as spam", "Hierarchical clustering"},
-                2
-        ));
-
-// Q33
-        list.add(new Question(
-                "Which is an example of supervised learning?",
-                new String[]{"Clustering customer groups", "Email spam filtering with labeled emails", "Random data generation", "Exploring databases"},
+                "In supply chain applications, blockchain primarily helps by",
+                new String[]{"Reducing transparency", "Tracking products and ensuring authenticity", "Replacing sensors", "Removing cloud computing"},
                 1
         ));
 
-// Q34
         list.add(new Question(
-                "Which protocol is used in IoT logical design for messaging?",
-                new String[]{"MQTT", "HDMI", "VGA", "FTP"},
+                "A hospital wants to securely share patient records across multiple clinics while maintaining privacy. Which type of blockchain is most suitable-",
+                new String[]{"Public Blockchain", "Private Blockchain", "Consortium Blockchain", "Hybrid Blockchain"},
                 0
         ));
 
-// Q35
         list.add(new Question(
-                "PSTN Core network is used in _____ mobile network.",
-                new String[]{"5G", "4G", "3G", "2G"},
+                "A gaming company wants to give players ownership of in-game assets through blockchain tokens that are tradable across platforms. Which application of blockchain does this represent-",
+                new String[]{"Finance", "Healthcare", "Gaming (NFTs / Digital Assets)", "Supply Chain"},
+                0
+        ));
+
+        list.add(new Question(
+                "A smart contract is used to automatically release payment when goods are delivered in a supply chain. Which blockchain feature makes this possible-",
+                new String[]{"Decentralization", "Transparency", "Immutability and automation", "Cryptocurrency mining"},
+                0
+        ));
+
+        list.add(new Question(
+                "Smart contracts_______",
+                new String[]{"Require a lawyer to enforce", "Are self-executing contracts coded on blockchain", "Can be changed anytime by the creator", "Need intermediaries"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which is a key feature of smart contracts-",
+                new String[]{"Autonomy and immutability", "Manual execution", "Require human intervention", "Can be erased easily"},
+                0
+        ));
+
+        list.add(new Question(
+                "Bitcoin is ........",
+                new String[]{"A centralized digital currency", "A cryptocurrency operating on blockchain", "A fiat currency", "Not related to blockchain"},
+                0
+        ));
+
+        list.add(new Question(
+                "Ethereum is known for ........",
+                new String[]{"Only cryptocurrency transactions", "Enabling smart contract execution", "Being a private blockchain", "Centralized control"},
+                1
+        ));
+
+        list.add(new Question(
+                "Bitcoin and Ethereum are examples of:",
+                new String[]{"Private Blockchains", "Public Blockchains", "Consortium Blockchains", "Hybrid Blockchains"},
+                1
+        ));
+
+        list.add(new Question(
+                "Bitcoin and Ethereum are examples of",
+                new String[]{"Currency", "Cryptocurrency", "Cryptography", "Algorithm"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which of the following is a popular cryptocurrency-",
+                new String[]{"Ethereum", "MySQL", "Python", "Hyperledger"},
+                0
+        ));
+
+        list.add(new Question(
+                "Which blockchain is known for pioneering smart contracts-",
+                new String[]{"Bitcoin", "Ethereum", "Litecoin", "Dogecoin"},
+                0
+        ));
+
+        list.add(new Question(
+                "A smart contract is",
+                new String[]{"A physical contract stored digitally", "A self-executing program with the terms of the agreement coded", "A blockchain token", "A database management system"},
+                0
+        ));
+
+        list.add(new Question(
+                "“Smart contracts” are based on ........",
+                new String[]{"“if/when…then” logic", "Manual approval process", "Paper documentation", "Third-party arbitration"},
+                0
+        ));
+
+        list.add(new Question(
+                "The biggest scalability challenge is ........",
+                new String[]{"Slow transactions as network grows", "Too much transparency", "Lack of security", "Too many users"},
+                0
+        ));
+
+        list.add(new Question(
+                "Proof of Work consensus consumes ........",
+                new String[]{"Minimal energy", "High energy due to mining computations", "No electricity", "Renewable resources only"},
+                1
+        ));
+
+        list.add(new Question(
+                "Regulatory uncertainty ........",
+                new String[]{"Encourages rapid adoption", "Hinders blockchain adoption globally", "Is resolved everywhere", "Does not affect blockchain"},
+                1
+        ));
+
+        list.add(new Question(
+                "What is a \"51% attack\"-",
+                new String[]{"When a single user controls over half of all mining power", "More than half network uses blockchain", "Over half transactions are instant", "None of the above"},
+                0
+        ));
+
+        list.add(new Question(
+                "Immutability challenges include ........",
+                new String[]{"Inability to correct errors once stored", "Data easily altered", "Data deleted automatically", "Frequent rollbacks"},
+                0
+        ));
+
+        list.add(new Question(
+                "A privacy issue in public blockchains is ........",
+                new String[]{"Complete anonymity", "Exposure of transaction details publicly", "Data encryption", "Transparency for trusted users only"},
+                0
+        ));
+
+        list.add(new Question(
+                "Which blockchain challenge is associated with high energy consumption due to mining-",
+                new String[]{"Scalability", "Security", "Efficiency", "Decentralization"},
                 3
         ));
 
-// Q36
         list.add(new Question(
-                "Which frequency band is commonly used in 5G?",
-                new String[]{"Low-frequency AM band", "700 MHz - 52 GHz", "10-20 kHz", "1-5 kHz"},
-                1
+                "What is tokenization in blockchain-",
+                new String[]{"Converting assets into digital tokens for easier transfer", "Hiding asset identity", "Destroying digital records", "Encrypting personal data only"},
+                3
         ));
 
-// Q37
         list.add(new Question(
-                "Which AI category is still hypothetical and involves consciousness?",
-                new String[]{"Reactive Machines", "Limited Memory", "Self-Awareness AI", "Narrow AI"},
+                "Which blockchain consensus reduces energy consumption compared to Proof of Work-",
+                new String[]{"Proof of Stake", "Proof of Authority", "Proof of Identity", "Proof of Power"},
+                0
+        ));
+
+        list.add(new Question(
+                "Gas fees in Ethereum are used to ........",
+                new String[]{"Pay transaction processing on blockchain", "Control user access", "Reward users with tokens", "None of the above"},
+                0
+        ));
+
+        list.add(new Question(
+                "Which layer of blockchain architecture is responsible for validating and recording transactions-",
+                new String[]{"Data Layer", "Network Layer", "Consensus Layer", "Application Layer"},
+                0
+        ));
+
+        list.add(new Question(
+                "What is a dApp",
+                new String[]{"Type of Blockchain", "A type of Cryptocurrency", "A decentralized Application", "Smart Contract"},
+                0
+        ));
+
+        list.add(new Question(
+                "How many layers are there in Blockchain architecture-",
+                new String[]{"3", "4", "5", "7"},
+                0
+        ));
+
+        list.add(new Question(
+                "Blockchain 2.0 is born in the year-",
+                new String[]{"2009", "2014", "2017", "2018"},
+                0
+        ));
+
+        list.add(new Question(
+                "____ is used in peer to peer communications between the nodes that allow them to discover each other and get synchronized with another node.-",
+                new String[]{"Presentation Layer", "Application Layer", "Propagation Layer", "Semantic Layer"},
                 2
         ));
 
-// Q38
-        list.add(new Question(
-                "Which technique is part of unsupervised learning?",
-                new String[]{"Support Vector Machines.", "K-means clustering.", "Decision Trees.", "Reinforcement Learning"},
-                1
-        ));
-
-// Q39
-        list.add(new Question(
-                "What is overfitting in Deep Learning?",
-                new String[]{"Model performs well on new data only.", "Model fits training data too closely, reducing generalization.", "Model training completed fast.", "Data normalization process."},
-                1
-        ));
-
-// Q40
-        list.add(new Question(
-                "What is the output layer's job?",
-                new String[]{"Process input data.", "Adjust weights during training.", "Generate final model prediction.", "Store training data."},
-                2
-        ));
-        Collections.shuffle(list);
-
-        return list;
     }
+
+    private static void addChapter4(ArrayList<Question> list) {
+        list.add(new Question(
+                "Immersive technology merges:",
+                new String[]{"Hardware and software", "Physical and digital environments", "Data and storage", "Networks"},
+                0
+        ));
+
+        list.add(new Question(
+                "Main purpose of immersive technology is to:",
+                new String[]{"Replace physical systems", "Enhance user experience through engagement", "Reduce computer speed", "Store more data"},
+                3
+        ));
+
+        list.add(new Question(
+                "Which technology completely replaces the real world with a simulated one-",
+                new String[]{"AR", "VR", "MR", "XR"},
+                1
+        ));
+
+        list.add(new Question(
+                "The device Essential for VR experience:",
+                new String[]{"Monitor", "VR headset", "Smartphone", "Keyboard"},
+                1
+        ));
+
+        list.add(new Question(
+                "Augmented Reality works by:",
+                new String[]{"Simulating only virtual worlds", "Overlaying digital objects on real world", "Creating Sound-based simulations", "Replacing human senses"},
+                1
+        ));
+
+        list.add(new Question(
+                "Mixed Reality (MR) is a combination of:",
+                new String[]{"AR and AI", "VR and IoT", "AR and VR", "None of these"},
+                2
+        ));
+
+        list.add(new Question(
+                "The term XR (Extended Reality) refers to:",
+                new String[]{"Only VR applications", "Combination of VR, AR, MR", "Only AR applications", "Gaming technology"},
+                1
+        ));
+
+        list.add(new Question(
+                "Haptic technology mainly stimulates which human sense:",
+                new String[]{"Hearing", "Touch", "Vision", "Smell"},
+                1
+        ));
+
+        list.add(new Question(
+                "A common example of AR in daily life is:",
+                new String[]{"Google Docs", "Pokémon GO", "YouTube", "PowerPoint"},
+                0
+        ));
+
+        list.add(new Question(
+                "Which Immersive technology allows users to interact with both real & digital objects in real time:",
+                new String[]{"AR", "MR", "VR", "XR"},
+                1
+        ));
+
+        list.add(new Question(
+                "The sense of \"presence\" in immersive technology means:",
+                new String[]{"The user is physically moving", "The user feels part of the virtual world", "The user's device is on", "None of these"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which of the following is a wearable haptic device:",
+                new String[]{"VR headset", "VR gloves", "Keyboard", "Joystick"},
+                0
+        ));
+
+        list.add(new Question(
+                "Touchable haptics are commonly used in",
+                new String[]{"Smartphones and tablets", "Servers", "VR helmets", "Data centers"},
+                0
+        ));
+
+        list.add(new Question(
+                "Mid-air haptics deliver sensations using :",
+                new String[]{"Electricity", "Ultrasound waves", "Heat sensors", "Vibrations only"},
+                3
+        ));
+
+        list.add(new Question(
+                "Which immersive technology is most used for training pilots:",
+                new String[]{"AR", "VR", "MR", "XR"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which technology provides 3D visual overlays on physical spaces:",
+                new String[]{"MR", "AR", "VR", "Haptic"},
+                0
+        ));
+
+        list.add(new Question(
+                "XR is best described as ……",
+                new String[]{"Software simulation", "The umbrella term for AR, VR, MR", "Quantum device", "Mechanical design tool"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which industry was among the first to adopt immersive technology widely-",
+                new String[]{"Education", "Gaming", "Manufacturing", "Agriculture"},
+                1
+        ));
+
+        list.add(new Question(
+                "Immersive technologies engage which senses-",
+                new String[]{"Sight and sound", "Taste and smell", "Balance and touch", "None"},
+                0
+        ));
+
+        list.add(new Question(
+                "Microsoft HoloLens is an example of ……",
+                new String[]{"VR device", "MR device", "AR device", "XR headset"},
+                3
+        ));
+
+        list.add(new Question(
+                "In education, immersive technology helps by ……",
+                new String[]{"Creating physical textbooks", "Enabling virtual field trips", "Replacing teachers", "Reducing school hours"},
+                1
+        ));
+
+        list.add(new Question(
+                "Medical students use VR to ……",
+                new String[]{"Play games", "Practice surgery in virtual environments", "Write reports", "Scan patient IDs"},
+                1
+        ));
+
+        list.add(new Question(
+                "AR can assist engineers by ……",
+                new String[]{"Reducing machine cost", "Overlaying design elements on real components", "Replacing hardware", "Printing 3D models"},
+                1
+        ));
+
+        list.add(new Question(
+                "In real estate, VR enables ……",
+                new String[]{"Cost estimation", "Remote property tours", "Document management", "Security scanning"},
+                1
+        ));
+
+        list.add(new Question(
+                "AR marketing helps customers by ……",
+                new String[]{"Displaying product manuals", "Trying products virtually", "Increasing advertisements", "None"},
+                1
+        ));
+
+        list.add(new Question(
+                "In tourism, immersive technology offers ……",
+                new String[]{"Virtual previews of destinations", "Flight discounts", "Paper tickets", "Booking apps only"},
+                0
+        ));
+
+        list.add(new Question(
+                "The military uses VR and AR to ……",
+                new String[]{"Entertain troops", "Conduct safe training simulations", "Build bases", "None"},
+                1
+        ));
+
+        list.add(new Question(
+                "Healthcare uses VR for ……",
+                new String[]{"Music therapy", "Pain management and mental health", "Billing", "Insurance claims"},
+                1
+        ));
+
+        list.add(new Question(
+                "In architecture, immersive technology allows ……",
+                new String[]{"Viewing 3D models before construction", "Enhancing paper drawings", "Speeding up cement drying", "Painting walls"},
+                0
+        ));
+
+        list.add(new Question(
+                "AR glasses are used for ……",
+                new String[]{"Showing digital info in real-world view", "Listening to audio", "Printing photos", "Transferring files"},
+                0
+        ));
+
+        list.add(new Question(
+                "Green computing promotes:",
+                new String[]{"Energy conservation", "Faster processors", "Bigger servers", "More power usage"},
+                0
+        ));
+
+        list.add(new Question(
+                "Green IT mainly focuses on:",
+                new String[]{"Recycling and reducing e-waste", "Expensive chips", "Cloud gaming", "Crypto mining"},
+                0
+        ));
+
+        list.add(new Question(
+                "Energy-efficient hardware helps by:",
+                new String[]{"Increasing electricity cost", "Reducing power consumption", "Producing more heat", "degrating performance"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which of the following is a feature of Green Computing-",
+                new String[]{"High carbon footprint", "Use of renewable energy in data centers", "Increasing e-waste", "Faster clock speeds in processors"},
+                1
+        ));
+
+        list.add(new Question(
+                "Data centers improve cooling efficiency using ……….",
+                new String[]{"Hot aisle / cold aisle layout", "Random arrangement", "Closed chambers", "Heating ducts"},
+                0
+        ));
+
+        list.add(new Question(
+                "Liquid cooling in data centers is used for ……….",
+                new String[]{"Better heat transfer", "Soundproofing", "Data encryption", "Visual enhancement"},
+                0
+        ));
+
+        list.add(new Question(
+                "Virtualization helps green computing by ……….",
+                new String[]{"Reducing physical servers", "Increasing storage devices", "Running fewer applications", "Wasting resources"},
+                0
+        ));
+
+        list.add(new Question(
+                "Green computing is also called ……….",
+                new String[]{"Cloud IT", "Green IT", "Smart IT", "Energy IT"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which of these is a benefit of green computing-",
+                new String[]{"Cost savings", "High temperature", "More pollution", "Data loss"},
+                0
+        ));
+
+        list.add(new Question(
+                "A paperless office contributes to ……….",
+                new String[]{"Waste generation", "Green computing", "Carbon increase", "None"},
+                0
+        ));
+
+        list.add(new Question(
+                "The first stage in e-waste management is ……….",
+                new String[]{"Sorting", "Collection", "Dismantling", "Recycling"},
+                1
+        ));
+
+        list.add(new Question(
+                "Data destruction ensures ……….",
+                new String[]{"File recovery", "Information security", "Power efficiency", "Free software"},
+                1
+        ));
+
+        list.add(new Question(
+                "Shredding is done to ……….",
+                new String[]{"Mix components", "Break down parts for sorting", "Repair devices", "None"},
+                1
+        ));
+
+        list.add(new Question(
+                "Magnetic separation removes ……….",
+                new String[]{"Plastic", "Steel and iron", "Copper", "Glass"},
+                1
+        ));
+
+        list.add(new Question(
+                "Eddy current separation targets ……….",
+                new String[]{"Non-ferrous metals", "Glass", "Wood", "Paper"},
+                0
+        ));
+
+        list.add(new Question(
+                "Water separation helps in separating ………",
+                new String[]{"Glass and plastics", "Metals", "Chemicals", "All materials"},
+                0
+        ));
+
+        list.add(new Question(
+                "Material recovery extracts ………",
+                new String[]{"Gold, copper, silver", "Plastic, paper, wood", "Lead, mercury", "Glass only"},
+                0
+        ));
+
+        list.add(new Question(
+                "Hazardous waste includes ………",
+                new String[]{"Plastic", "Lead, mercury, cadmium", "Paper", "Aluminum"},
+                1
+        ));
+
+        list.add(new Question(
+                "The purpose of e-waste recycling is to ………",
+                new String[]{"Produce more e-waste", "Reduce environmental impact", "Generate new waste", "Discard all materials"},
+                1
+        ));
+
+        list.add(new Question(
+                "Recovered materials are used to ………",
+                new String[]{"Create new electronic products", "Build buildings", "Produce paper", "Make fuel"},
+                0
+        ));
+
+        list.add(new Question(
+                "Quantum computing is based on ………",
+                new String[]{"Quantum mechanics", "Classical physics", "Thermodynamics", "Nanotechnology"},
+                0
+        ));
+
+        list.add(new Question(
+                "The basic unit of quantum information is ………",
+                new String[]{"Bit", "Byte", "Qubit", "Node"},
+                2
+        ));
+
+        list.add(new Question(
+                "Superposition allows a qubit to be ………",
+                new String[]{"0 or 1", "0 and 1 simultaneously", "2 only", "None"},
+                0
+        ));
+
+        list.add(new Question(
+                "Entanglement means ………",
+                new String[]{"Two qubits interact instantly", "Qubits separate", "Bits collide", "Data loss"},
+                0
+        ));
+
+        list.add(new Question(
+                "Quantum interference helps ………",
+                new String[]{"Eliminate wrong solutions", "Store memory", "Increase heat", "Encrypt data"},
+                0
+        ));
+
+        list.add(new Question(
+                "Classical computers use ………",
+                new String[]{"Qubits", "Bits", "Gates only", "Photons"},
+                1
+        ));
+
+        list.add(new Question(
+                "Quantum computers can solve problems ………",
+                new String[]{"Sequentially", "In parallel", "Randomly", "Slowly"},
+                1
+        ));
+
+        list.add(new Question(
+                "Example of a quantum computer ………",
+                new String[]{"IBM Quantum", "Dell Laptop", "Raspberry Pi", "Chromebook"},
+                0
+        ));
+
+        list.add(new Question(
+                "Quantum computing helps in ………",
+                new String[]{"Drug discovery", "Game design", "Web hosting", "UI design"},
+                0
+        ));
+
+        list.add(new Question(
+                "Quantum Key Distribution (QKD) is used in ………",
+                new String[]{"Cryptography", "AI", "Robotics", "Machine learning"},
+                0
+        ));
+
+        list.add(new Question(
+                "Google’s quantum computer is called ………",
+                new String[]{"Titan", "Sycamore", "QuantumX", "DeepMind"},
+                1
+        ));
+
+        list.add(new Question(
+                "Quantum computers process information using ………",
+                new String[]{"Classical gates", "Quantum gates", "Optical drives", "CPUs"},
+                1
+        ));
+
+        list.add(new Question(
+                "Quantum computing benefits which field most-",
+                new String[]{"Optimization", "Animation", "Gaming", "Cloud hosting"},
+                0
+        ));
+
+        list.add(new Question(
+                "Quantum computing is still in ………",
+                new String[]{"Early development stage", "Full production", "Decline", "Decommissioning"},
+                0
+        ));
+
+        list.add(new Question(
+                "A key difference between classical and quantum computing is ………",
+                new String[]{"Speed of data transfer", "Representation of data (bits vs qubits)", "Screen resolution", "Hardware design"},
+                0
+        ));
+
+        list.add(new Question(
+                "In quantum computing, probability is used for ………",
+                new String[]{"Observing results", "Compressing data", "Encrypting data", "Deleting files"},
+                0
+        ));
+
+        list.add(new Question(
+                "Quantum algorithms are faster for ………",
+                new String[]{"Sorting", "Factoring large numbers", "Simple addition", "Text processing"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which principle allows linked qubits to share information instantly-",
+                new String[]{"Superposition", "Entanglement", "Holography", "Refraction"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which area can quantum computing revolutionize-",
+                new String[]{"Cybersecurity", "Photography", "Social media", "Printing"},
+                0
+        ));
+
+        list.add(new Question(
+                "The main challenge in building quantum computers is ………",
+                new String[]{"Data storage", "Qubit stability and error correction", "Color display", "User interface"},
+                1
+        ));
+
+        list.add(new Question(
+                "How does AR differ from VR-",
+                new String[]{"AR fully replaces the real world; VR only enhances it", "AR enhances the real world with digital overlays, VR replaces the real world", "AR and VR are the same in terms of immersion", "AR requires haptic suits while VR does not"},
+                1
+        ));
+
+        list.add(new Question(
+                "Why Mixed Reality (MR) is considered more advanced than AR-",
+                new String[]{"MR only works on smartphones", "MR allows digital and physical objects to interact in real-time", "MR completely ignores the real environment", "MR is only used in gaming"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which application of immersive technology is best explained by “IKEA’s AR app to visualize furniture”-",
+                new String[]{"Tourism", "Retail & E-commerce", "Entertainment", "Healthcare"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which of the following best explains server virtualization in Green Computing-",
+                new String[]{"Increasing the number of servers to balance workload", "Using one physical server to host multiple virtual machines", "Reducing server speed to save energy", "Recycling old servers into new ones."},
+                1
+        ));
+
+        list.add(new Question(
+                "Why is quantum superposition powerful-",
+                new String[]{"It reduces memory usage in computers", "It allows a qubit to exist in multiple states at once", "It eliminates the need for quantum gates", "It increases processor clock speeds"},
+                0
+        ));
+
+        list.add(new Question(
+                "A medical student practices surgery using a VR simulator before treating a real patient. This is an example of:",
+                new String[]{"Entertainment application of VR", "Education & Training application of VR", "AR in healthcare", "Haptic feedback technology"},
+                0
+        ));
+
+        list.add(new Question(
+                "A soldier trains in a VR battlefield before deployment. Which immersive technology application does this represent-",
+                new String[]{"Healthcare", "Tourism", "Defense & Military", "Sports & Fitness"},
+                0
+        ));
+
+        list.add(new Question(
+                "A smartphone provides vibration feedback when pressing a touchscreen button. This is an example of:",
+                new String[]{"Augmented Reality", "Extended Reality", "Haptic Technology", "Quantum Interference"},
+                0
+        ));
+
+        list.add(new Question(
+                "A data center reduces cooling costs by using free air cooling and liquid cooling. This demonstrates:",
+                new String[]{"Quantum computing optimization", "E-waste management", "Green Data Center Practices", "Mixed Reality in Industry"},
+                0
+        ));
+
+        list.add(new Question(
+                "A company wants to simulate new drug molecules to accelerate vaccine development. Which technology is most suitable-",
+                new String[]{"Virtual Reality", "Quantum Computing", "Green Computing", "Mixed Reality"},
+                0
+        ));
+
+    }
+
+    private static void addChapter5(ArrayList<Question> list) {
+        list.add(new Question(
+                "Digital Forensics is primarily concerned with ……",
+                new String[]{"building computer systems", "Preservation, identification, extraction, and documentation of computer evidence", "software development", "network installation"},
+                1
+        ));
+
+        list.add(new Question(
+                "………….is a branch of forensic science encompassing the recovery and investigation of material found in digital devices.",
+                new String[]{"Analog forensic", "Digital forensic", "Cyber forensic", "Computer forensic"},
+                0
+        ));
+
+        list.add(new Question(
+                "Digital forensics helps in ……",
+                new String[]{"Breaking software licenses", "Estimating potential impact of malicious activity", "Upgrading hardware", "Designing new programming languages"},
+                1
+        ));
+
+        list.add(new Question(
+                "Major goal of Digital Forensics is ___-",
+                new String[]{"To duplicate original data and preserve original evidence.", "V alidation of digital information", "Collection of digital evidence", "All of above"},
+                3
+        ));
+
+        list.add(new Question(
+                "Which of the following is an objective of digital forensics-",
+                new String[]{"Design UI for software", "Recover, analyze, and preserve computer materials for legal proceedings", "Develop malware", "Install operating systems"},
+                1
+        ));
+
+        list.add(new Question(
+                "Investigator should follow follwing rule/rules-",
+                new String[]{"Computer and data on it must be protected during acquisition of the media.", "An examination should never be performed on the original media.", "Both A & B", "A is true B is False"},
+                0
+        ));
+
+        list.add(new Question(
+                "Which of the following is a core rule of digital forensics-",
+                new String[]{"Work directly on the original evidence", "Maintain integrity and create a forensically sound copy", "Ignore documentation", "Skip chain of custody"},
+                0
+        ));
+
+        list.add(new Question(
+                "Forensic duplication is necessary because:",
+                new String[]{"To save storage space", "To preserve the original evidence while performing analysis", "To speed up software installation", "To format drives"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which tool is widely used for forensic imaging-",
+                new String[]{"Wireshark", "Encase", "MS-Excel", "Notepad"},
+                1
+        ));
+
+        list.add(new Question(
+                "Forensic triage is performed to:",
+                new String[]{"Repair broken hardware", "Quickly assess and prioritize evidence", "Encrypt files", "Install antivirus software"},
+                1
+        ));
+
+        list.add(new Question(
+                "Metadata in digital evidence includes:",
+                new String[]{"Data about data (Creation time, author, last modified )", "File content only", "File size Only", "IP addresses only"},
+                0
+        ));
+
+        list.add(new Question(
+                "Imaging a storage device ensures ……",
+                new String[]{"Deletion of all files", "An exact bit-by-bit copy of data", "Faster internet speed", "Encryption of files"},
+                1
+        ));
+
+        list.add(new Question(
+                "Hashing in digital forensics is used to:",
+                new String[]{"Compress data", "Verify integrity of digital evidence", "Encrypt emails", "Convert files to PDFs"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which model is used for real-time or live forensic analysis-",
+                new String[]{"DFRWS", "Live Forensic Model", "IDIP", "ADFM"},
+                1
+        ));
+
+        list.add(new Question(
+                "Foot printing in ethical hacking is done to...",
+                new String[]{"Plant malware", "Gather preliminary information about the target", "delete user accounts", "crack passwords only"},
+                1
+        ));
+
+        list.add(new Question(
+                "Scanning in hacking helps to:",
+                new String[]{"Exploit vulnerabilities", "Identify open ports, services, and weak points", "Encrypt the network", "Create a backup"},
+                1
+        ));
+
+        list.add(new Question(
+                "Enumeration phase involves:",
+                new String[]{"Listing potential targets and system details", "Installing antivirus", "Performing backups", "Writing reports only"},
+                0
+        ));
+
+        list.add(new Question(
+                "Post-exploitation phase is for:",
+                new String[]{"Restoring system data", "Maintaining access, covering tracks, and extracting data", "Scanning the system", "Running antivirus"},
+                1
+        ));
+
+        list.add(new Question(
+                "What is the first stage in digital forensics investigation-",
+                new String[]{"Analysis", "Documentation", "Identification", "Presentation"},
+                2
+        ));
+
+        list.add(new Question(
+                "Which stage involves creating a forensic image of the digital evidence-",
+                new String[]{"Identification", "Preservation / Extraction", "Documentation", "Presentation"},
+                0
+        ));
+
+        list.add(new Question(
+                "Which step of digital forensics focuses on freezing the crime scene digitally-",
+                new String[]{"Analysis", "Preservation", "Documentation", "Collection"},
+                1
+        ));
+
+        list.add(new Question(
+                "Why is evidence preservation important in digital forensics-",
+                new String[]{"To compress data", "To maintain its integrity for legal acceptance", "To speed up recovery", "To allow duplication"},
+                1
+        ));
+
+        list.add(new Question(
+                "The “Preservation” phase in any forensic model involves:",
+                new String[]{"Collecting evidence and maintaining chain of custody", "Writing reports only", "Installing software patches", "Monitoring network traffic"},
+                0
+        ));
+
+        list.add(new Question(
+                "In digital forensics, ______ values are used to ensure data integrity.",
+                new String[]{"Checksum", "Hash", "Packet", "Cipher"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which of the following are sources of digital evidences-",
+                new String[]{"Internet based files", "Stand-alone computers or devices", "Mobile devices", "All of the above"},
+                3
+        ));
+
+        list.add(new Question(
+                "During evidence handling, why is a chain of custody important-",
+                new String[]{"To reduce paperwork", "To prove evidence integrity and control", "To speed up the investigation", "To delete irrelevant files"},
+                1
+        ));
+
+        list.add(new Question(
+                "What is/are the procedural steps to establish chain of Custody-",
+                new String[]{"Work with original evidence", "Perform a hash test analysis", "Alter the state of evidence", "Declare the confidential matters"},
+                0
+        ));
+
+        list.add(new Question(
+                "Why it is important to maintain the Chain of Custody-",
+                new String[]{"To preserve the integrity of the evidence", "To prevent it from contamination", "To maintain the state of evidence", "All of the above"},
+                3
+        ));
+
+        list.add(new Question(
+                "Write the Correct sequence steps of procedure to establish the Chain of Custody- 1. Save the original materials 2. Perform a hash test analysis to further authenticate the working clone 3. Take screenshot of digital evidence content 4. Inject bit by bit clone of digital evidence content into our forensic computers",
+                new String[]{"Sequence of Steps 1,2,3,4", "Sequence of Steps 1,3,4,2", "Sequence of steps 2,3,4,1", "Sequence of steps 3,4,1,2"},
+                0
+        ));
+
+        list.add(new Question(
+                "Volatile data in digital forensics refers to ……",
+                new String[]{"Hard disk data", "Data in RAM that may be lost if not captured properly", "Data stored in external drives", "Encrypted data only"},
+                1
+        ));
+
+        list.add(new Question(
+                "The DFRWS model was proposed in ……",
+                new String[]{"1999", "2001", "2005", "2010"},
+                1
+        ));
+
+        list.add(new Question(
+                "The DFRWS model belongs to-",
+                new String[]{"Digital forensic investigation", "Operating system hacking", "Web application development", "Network protocol testing"},
+                0
+        ));
+
+        list.add(new Question(
+                "ADFM stands for……-",
+                new String[]{"Analog Digital Forensic Model", "Abstract Digital Forensic Model", "Abstract Discrete Forensic Model", "Analog Discrete Forensic Model"},
+                1
+        ));
+
+        list.add(new Question(
+                "EMCI means……….-",
+                new String[]{"Extended Model for Cybercrime Investigation", "Electronic Model for Cybercrime Invention", "Extended Mode for Cybercrime Investigation", "Emergency Model for Cybercrime Investigation"},
+                0
+        ));
+
+        list.add(new Question(
+                "UMDFPM stands for ……",
+                new String[]{"Unified Model of Digital Forensic Process", "UML Modeling of Digital Forensic Process Model", "Universal Method for Digital Police", "Unified Module for Digital Protection"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which model adds Preparation and Return of Evidence phases-",
+                new String[]{"DFRWS Model", "ADFM", "IDIP", "EEDIP"},
+                1
+        ));
+
+        list.add(new Question(
+                "Identify Forensic Model in given fig-",
+                new String[]{"IDIP", "EMCI", "Waterfall", "ADFM"},
+                3
+        ));
+
+        list.add(new Question(
+                "In ADFM, Which phase is used to provide summary and explaination of conclusion-",
+                new String[]{"Approach Strategy", "Presentation", "Preservation", "Analysis"},
+                1
+        ));
+
+        list.add(new Question(
+                "In ADFM model,The preparation of tools,techniques,search warrants are functions of which phase-",
+                new String[]{"Collection", "Examination", "Preservation", "Preparation"},
+                3
+        ));
+
+        list.add(new Question(
+                "The IDIP model integrates ……",
+                new String[]{"only digital evidence", "Both digital and physical crime scene investigations", "only network attacks", "only legal documentation"},
+                1
+        ));
+
+        list.add(new Question(
+                "Integrated Digital Investigation Process (IDIP) mainly focuses on-",
+                new String[]{"OS patching", "Cloud backup", "Data encryption", "Linking physical and digital crimes"},
+                3
+        ));
+
+        list.add(new Question(
+                "In IDIP Model, to provide mechanism to an incident to be detected and confirmed is purpose of which phase-",
+                new String[]{"Review phase", "Physical crime investigation", "Deployment phase", "Digital crime investigation."},
+                2
+        ));
+
+        list.add(new Question(
+                "Which phase of IDIP model includes Detection & Notification Phase-",
+                new String[]{"Deployment Phase", "Physical Crime Investigation", "Readiness", "Review phase"},
+                0
+        ));
+
+        list.add(new Question(
+                "In IDIP Model, Which phase is used to put the pieces of digital puzzle together and developing investigative hypotheses.-",
+                new String[]{"Review phase", "Presentation phase", "Reconstruction phase", "Notification phase"},
+                3
+        ));
+
+        list.add(new Question(
+                "In IDIP,Digital crime investigation phase includes ……………..-",
+                new String[]{"Survey phase", "Documentation phase", "Search and collection phase", "All of above"},
+                3
+        ));
+
+        list.add(new Question(
+                "In Digital Forensic, Planning, Transport of Evidence and Presentation of hypothesis are phases of ……….model-",
+                new String[]{"ADFM", "EMCI", "IDIP", "None of these"},
+                1
+        ));
+
+        list.add(new Question(
+                "Hypothesis is the phase of which forensic model",
+                new String[]{"ADFM", "EMCI", "IDIP", "RoadMap"},
+                3
+        ));
+
+        list.add(new Question(
+                "Which model is suitable for multi-agency cybercrime cases requiring structured communication-",
+                new String[]{"DFRWS", "Extended Model for Cybercrime Investigation", "ADFM", "IDIP"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which model focuses on end-to-end traceability and automated documentation-",
+                new String[]{"DFRWS Model", "EEDIP", "UMDFPM", "ADFM"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which model emphasizes legal admissibility of evidence from start to end-",
+                new String[]{"DFRWS", "ADFM", "IDIP", "EEDIP"},
+                2
+        ));
+
+        list.add(new Question(
+                "Black-hat hacking is………..",
+                new String[]{"Legal tester of systems", "Malicious hackers exploiting vulnerabilities for personal gain", "Students learning hacking", "Cyber security officers"},
+                1
+        ));
+
+        list.add(new Question(
+                "Blue Hat hackers are usually:",
+                new String[]{"Internal corporate testers before software release", "Malicious hackers", "Government hackers", "Script kiddies"},
+                0
+        ));
+
+        list.add(new Question(
+                "Script kiddies are:",
+                new String[]{"Experienced hackers", "Unskilled attackers using pre-made tools.", "Government cybersecurity professionals", "AI based attack tools"},
+                1
+        ));
+
+        list.add(new Question(
+                "Hacktivists are motivated by:",
+                new String[]{"Money", "Political or social causes", "Corporate espionage", "Virus creation"},
+                1
+        ));
+
+        list.add(new Question(
+                "State-sponsored hackers are:",
+                new String[]{"Ethincal testers", "Government-backed attackers for espionage or cyberwarfare", "Students learning hacking", "Penetration testers."},
+                1
+        ));
+
+        list.add(new Question(
+                "Which hacker type acts legally to help organizations secure systems-",
+                new String[]{"Black Hat", "White Hat", "Grey Hat", "Blue Hat"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which hacker type may access systems without permission but without malicious intent-",
+                new String[]{"White Hat", "Grey Hat", "Red Hat", "Green Hat"},
+                1
+        ));
+
+        list.add(new Question(
+                "A hacker who identifies and exploits weaknesses in telephones instead of computers is called as…..………",
+                new String[]{"White hat hacker", "Black hat hacker", "Phreaker", "Hacktivist"},
+                0
+        ));
+
+        list.add(new Question(
+                "The skilled criminal experts who write some of the hacking tools, including the scripts and other programs that the script kiddies and security professionals use are known as……………..",
+                new String[]{"Hacktivist", "Criminal Hackers", "Script Kiddies", "Security Researchers"},
+                1
+        ));
+
+        list.add(new Question(
+                "A Red Hat Hacker is known for ……",
+                new String[]{"creating malware for profit", "Aggressively stopping black hat hackers", "learning hacking as a beginner", "ethical penetration testing"},
+                0
+        ));
+
+        list.add(new Question(
+                "Ethical hacking is ……",
+                new String[]{"Illegal hacking for personal gain", "Authorized testing of systems to identify vulnerabilities", "Installing malware", "Ignoring security measures"},
+                1
+        ));
+
+        list.add(new Question(
+                "Ethical Hacking is…………..",
+                new String[]{"Identifying weakness in computer systems and/or computer networks and coming up with counter measures that protect the weaknesses.", "Identifying weakness in programmer and coming up with counter measures that protect the weaknesses.", "Identifying weakness in only software and attacking the same.", "Enforcing the weakness in computer systems."},
+                0
+        ));
+
+        list.add(new Question(
+                "Using password cracking algorithm to gain access to a system is an example of …………",
+                new String[]{"Security auditing", "Ethical hacking", "System engineering", "Social engineering"},
+                0
+        ));
+
+        list.add(new Question(
+                "..……..is performed with the target’s permission in a professional setting.",
+                new String[]{"Ethical hacking", "Social engineering", "System Engineering", "Software Testing"},
+                0
+        ));
+
+        list.add(new Question(
+                "Sequential steps hackers uses are: __, ___, __, __ A. Maintaining Access B. Reconnaissance C. Scanning D. Gaining Access",
+                new String[]{"B, C, D, A", "B, A, C, D", "A, B, C, D", "D, C, B, A"},
+                0
+        ));
+
+        list.add(new Question(
+                "Phases of Ethical Hacking do NOT include ……",
+                new String[]{"Reconnaissance", "Scanning", "System destruction", "Reporting and analysis"},
+                2
+        ));
+
+        list.add(new Question(
+                "The intent of ethical hacking is…………..",
+                new String[]{"To discover the hacker who hacks the secure systems.", "To promote the malicious attacker’s hack to better secure systems.", "To discover vulnerabilities from a malicious attacker’s viewpoint to better secure systems.", "To introduce vulnerabilities into better secure systems."},
+                0
+        ));
+
+        list.add(new Question(
+                "The goal of ethical hacker is to hack a system in a…………..",
+                new String[]{"Non-destructive fashion", "Destructive fashion", "Highly destructive fashion", "Corruptive fashion"},
+                0
+        ));
+
+        list.add(new Question(
+                "To catch a thief, think like a thief. That’s the basis for………",
+                new String[]{"Security testing", "Ethical hacking", "Configuration testing", "Performance testing"},
+                0
+        ));
+
+        list.add(new Question(
+                "What do the Cyberterrorists do-",
+                new String[]{"They are skilled criminal experts who write some of the hacking tools, including the scripts and other programs that the script kiddies and security professionals use.", "They are highly technical and publicly known security experts who not only monitor and track computer, network, and application vulnerabilities but also write the tools and other code to exploit them.", "Attack corporate or government computers and public utility infrastructures, such as power grids and air traffic control towers.", "They are computer novices who take advantage of the exploit tools, vulnerability scanners, and documentation available free on the Internet but who don’t have any real"},
+                2
+        ));
+
+        list.add(new Question(
+                "………is the art of exploiting the human elements to gain access to unauthorised resources",
+                new String[]{"Social Engineering.", "IT Engineering.", "Software testing", "Ethical Hacking."},
+                0
+        ));
+
+        list.add(new Question(
+                "Which of the following is an AI-powered attack-",
+                new String[]{"Ransomware 2.0", "Deepfake phishing", "OS downgrade attack", "Firmware exploit"},
+                1
+        ));
+
+        list.add(new Question(
+                "Ransomware 2.0 is known for ……",
+                new String[]{"Encrypting files only", "Encrypting and exfiltrating data for double / triple extortion", "Exploiting network devices", "Downgrading OS"},
+                1
+        ));
+
+        list.add(new Question(
+                "IoT exploits typically involve ……",
+                new String[]{"Social engineering only", "Insecure devices used for attacks or botnets", "Application layer bypass", "Red Hat hacking"},
+                1
+        ));
+
+        list.add(new Question(
+                "Zero-day exploits are ……",
+                new String[]{"Known vulnerabilities with patches", "Unknown vulnerabilities with no patches available", "OS downgrade techniques", "Only web application issues"},
+                1
+        ));
+
+        list.add(new Question(
+                "Advanced WAF bypass attacks target ……",
+                new String[]{"Operating System", "Web applications", "IoT devices", "Firmware only"},
+                1
+        ));
+
+        list.add(new Question(
+                "Deep fake technology is associated with:",
+                new String[]{"Video/Audio manipulation", "Password cracking", "Firmware upgrade", "Hardware design"},
+                0
+        ));
+
+        list.add(new Question(
+                "AI-powered phishing scams belong to the category of ______ hacking.",
+                new String[]{"Application", "Network", "Operating system", "Firmware"},
+                1
+        ));
+
+        list.add(new Question(
+                "What it called when an unknown vulnerability is exploited before the vendor releases a patch.",
+                new String[]{"Zero-day exploits", "Ransomware", "Deep fake misuse", "Chain of custody error"},
+                0
+        ));
+
+        list.add(new Question(
+                "Phishing attacks aim to:",
+                new String[]{"Send spam", "Trick users into revealing sensitive information", "Encrypt files", "Scan network"},
+                1
+        ));
+
+        list.add(new Question(
+                "Ransomware attacks primarily involve:",
+                new String[]{"Stealing identities", "Encrypting user data and demanding ransom", "Crashing websites", "Spamming emails"},
+                1
+        ));
+
+        list.add(new Question(
+                "IoT botnets are used to:",
+                new String[]{"Launch DDoS attacks", "Encrypt files", "Test network speed", "Clean devices"},
+                0
+        ));
+
+        list.add(new Question(
+                "Malware is:",
+                new String[]{"Authorized software", "Malicious software designed to disrupt or damage", "Antivirus software", "Operating system upgrade"},
+                1
+        ));
+
+        list.add(new Question(
+                "Zero-day attacks are dangerous because:",
+                new String[]{"They use old vulnerabilies", "There is no patch available yet", "There are easy to prevent", "They target only students"},
+                3
+        ));
+
+        list.add(new Question(
+                "National Cyber Security Policy (NCSP) 2013 aims to ……",
+                new String[]{"Increase internet speed in India", "Protect public and private infrastructure from cyber attacks", "Ban all social media", "Create malware"},
+                1
+        ));
+
+        list.add(new Question(
+                "IT Act 2000 primarily deals with ……",
+                new String[]{"Hardware design", "Electronic records, digital signatures, and cybercrime", "Building networks", "Installing OS updates"},
+                1
+        ));
+
+        list.add(new Question(
+                "In Section 65, Tampering with computer source documents leads to the penalty as :",
+                new String[]{"Imprisonment up to three years, or/and with fine up to ₹200,000.", "Imprisonment up to three years, or/and with fine up to ₹100,000", "Imprisonment up to three years, or/and with fine up to ₹500,000", "Imprisonment up to life."},
+                0
+        ));
+
+        list.add(new Question(
+                "The Digital Personal Data Protection Act (DPDP) 2023 ensures:",
+                new String[]{"Free access to all data.", "Encourages phishing attacks.", "Lawful processing of personal data with consent", "Deletion of all user data automatically"},
+                2
+        ));
+
+        list.add(new Question(
+                "CCPWC Scheme (2018) focuses on:",
+                new String[]{"Cybercrime prevention against women and children", "Reducing malware attacks", "Ethical Hacking training only", "IOT security"},
+                0
+        ));
+
+        list.add(new Question(
+                "Which section of IT Act 2000 deals with hacking and computer offenses",
+                new String[]{"Section 43", "Section 66", "Section 72A", "Section 69"},
+                1
+        ));
+
+        list.add(new Question(
+                "The IT (Amendment) Act 2008 introduced:",
+                new String[]{"Only digital signatures", "Cybercrime provision including identity theft, phishing & cyber terrorism", "Internet connectivity rules", "Hardware standards"},
+                1
+        ));
+
+        list.add(new Question(
+                "Digital personal data protection Act (DPDP) 2023 replaced……",
+                new String[]{"IT Act 2000 completely", "Some provisions related to personal data protection under IT Act", "Only Copyright law", "Cybercrime section"},
+                1
+        ));
+
+        list.add(new Question(
+                "Cybercrime against women & children is covered under:",
+                new String[]{"IT Act Section 43", "IT Act 66A/66B & CCPWC Scheme", "DPDP Act only", "NCSP only"},
+                1
+        ));
+
+        list.add(new Question(
+                "Law that mandates consent for collecting personal data-",
+                new String[]{"IT Act 2000", "DPDP Act 2023", "CCPWC Scheme", "NCSP 2013"},
+                1
+        ));
+
+        list.add(new Question(
+                "NCSP 2013 was formulated by:",
+                new String[]{"UNESCO", "Government of India", "Private companies", "Ethical hackers"},
+                1
+        ));
+
+        list.add(new Question(
+                "Which IT Act amendment introduced the Digital Personal Data Protection (DPDP) Act-",
+                new String[]{"2000", "2008", "2023", "2013"},
+                2
+        ));
+
+        list.add(new Question(
+                "Police investigating online child exploitation cases would rely on which scheme-",
+                new String[]{"NCSP 2013", "IT Act 2000", "CCPWC 2018", "DPDP 2023"},
+                2
+        ));
+
+        list.add(new Question(
+                "A company discovers its employees are receiving AI-generated phishing emails, which type of hacking is this-",
+                new String[]{"OS hacking", "Application hacking", "Network hacking", "Firmware hacking"},
+                0
+        ));
+
+        list.add(new Question(
+                "If an attacker uses a deep fake voice to trick a bank employee into transferring money, this attack can be classified as-",
+                new String[]{"Network phishing", "Social engineering with AI exploits", "Firmware attack", "OS downgrade attack"},
+                0
+        ));
+
+        list.add(new Question(
+                "A forensic investigator is analyzing encrypted ransomware files. The encryption key was deleted by the attacker. To prove the case in court, which forensic step is most critical-",
+                new String[]{"Collection", "Chain of custody", "Preservation", "Presentation"},
+                0
+        ));
+
+        list.add(new Question(
+                "A financial company’s servers are encrypted by a ransomware gang. Attackers demand crypto currency payment and threaten to leak confidential customer data if the ransom is not paid.Identify the type of hacking involved in this case.",
+                new String[]{"Application hacking", "Network hacking – Ransomware 2.0", "Firmware exploits", "OS downgrade attack"},
+                0
+        ));
+
+        list.add(new Question(
+                "A multinational company handling Indian citizen’s personal data fails to comply with the DPDP Act 2023. Which risk do they face-",
+                new String[]{"Cyber forensic investigation", "Legal penalties and restrictions on data processing", "Ethical hacking mandates", "NCSP 2013 enforcement"},
+                0
+        ));
+
+    }
+
 }

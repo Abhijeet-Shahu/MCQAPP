@@ -17,16 +17,24 @@ import java.util.ArrayList;
 
 public class QuizActivity extends AppCompatActivity {
 
-    TextView tvTimer, tvQuestion;
-    Button btnA, btnB, btnC, btnD;
-    Button btnSkip;
-    ArrayList<Question> questions;
-    int index = 0;
-    int score = 0;
-    int questionNo = 1;
+    private TextView tvTimer;
+    private TextView tvQuestion;
+    private TextView tvMeta;
+    private Button btnA;
+    private Button btnB;
+    private Button btnC;
+    private Button btnD;
+    private Button btnSkip;
 
-    CountDownTimer timer;
-    String username;
+    private ArrayList<Question> questions;
+    private int index = 0;
+    private int score = 0;
+    private int questionNo = 1;
+
+    private CountDownTimer timer;
+    private String username;
+    private String subject;
+    private int chapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +44,7 @@ public class QuizActivity extends AppCompatActivity {
 
         tvTimer = findViewById(R.id.tvTimer);
         tvQuestion = findViewById(R.id.tvQuestion);
+        tvMeta = findViewById(R.id.tvMeta);
 
         btnA = findViewById(R.id.btnA);
         btnB = findViewById(R.id.btnB);
@@ -43,16 +52,13 @@ public class QuizActivity extends AppCompatActivity {
         btnD = findViewById(R.id.btnD);
         btnSkip = findViewById(R.id.btnSkip);
 
-
-        // Get data from intent
         username = getIntent().getStringExtra("username");
-        String subject = getIntent().getStringExtra("subject");
+        subject = getIntent().getStringExtra("subject");
+        chapter = getIntent().getIntExtra("chapter", 3);
 
-        if (subject != null && subject.equals("MAN")) {
-            questions = QuestionBank.getMANquestions();
-        } else {
-            questions = QuestionBank.getETIquestions();
-        }
+        questions = QuestionBank.getETIQuestionsByChapter(chapter);
+
+        tvMeta.setText("ETI • Chapter " + chapter + " • " + questions.size() + " questions");
 
         loadQuestion();
 
@@ -61,18 +67,16 @@ public class QuizActivity extends AppCompatActivity {
         btnC.setOnClickListener(v -> checkAnswer(2));
         btnD.setOnClickListener(v -> checkAnswer(3));
         btnSkip.setOnClickListener(v -> skipQuestion());
-
     }
 
-    // ---------------- LOAD QUESTION ----------------
     private void loadQuestion() {
-
         resetOptions();
 
         if (index >= questions.size()) {
             Intent intent = new Intent(QuizActivity.this, ResultActivity.class);
             intent.putExtra("username", username);
-            intent.putExtra("subject", getIntent().getStringExtra("subject"));
+            intent.putExtra("subject", subject);
+            intent.putExtra("chapter", chapter);
             intent.putExtra("score", score);
             intent.putExtra("total", questions.size());
             startActivity(intent);
@@ -93,105 +97,96 @@ public class QuizActivity extends AppCompatActivity {
         startTimer();
     }
 
-    // ---------------- TIMER ----------------
     private void startTimer() {
-
-        if (timer != null) timer.cancel();
+        if (timer != null) {
+            timer.cancel();
+        }
 
         timer = new CountDownTimer(45000, 1000) {
-
             @Override
             public void onTick(long millisUntilFinished) {
-                tvTimer.setText("Time: " + (millisUntilFinished / 1000) + "s");
+                tvTimer.setText("Time " + (millisUntilFinished / 1000) + "s");
             }
 
             @Override
             public void onFinish() {
                 disableOptions();
                 highlightCorrectAnswer();
-
                 new Handler().postDelayed(() -> {
                     index++;
                     loadQuestion();
-                }, 1500);
+                }, 1200);
             }
         }.start();
     }
 
     private void skipQuestion() {
+        if (timer != null) {
+            timer.cancel();
+        }
 
-        timer.cancel();
         disableOptions();
-
-        // Show correct answer
         highlightCorrectAnswer();
 
-        // Move to next question after delay
-        new android.os.Handler().postDelayed(() -> {
+        new Handler().postDelayed(() -> {
             index++;
             loadQuestion();
-        }, 1500);
+        }, 1200);
     }
 
-
-    // ---------------- CHECK ANSWER ----------------
     private void checkAnswer(int selectedOption) {
+        if (timer != null) {
+            timer.cancel();
+        }
 
-        timer.cancel();
         disableOptions();
 
         Question q = questions.get(index);
-
         Button correctBtn = getButtonByIndex(q.correctanswers);
         Button selectedBtn = getButtonByIndex(selectedOption);
 
-        // Correct option → GREEN
-        setOptionStyle(correctBtn, android.R.color.holo_green_light);
+        if (correctBtn != null) {
+            correctBtn.setBackgroundResource(R.drawable.bg_option_correct);
+        }
 
         if (selectedOption == q.correctanswers) {
             score++;
-        } else {
-            // Wrong selected option → RED
-            setOptionStyle(selectedBtn, android.R.color.holo_red_light);
+        } else if (selectedBtn != null) {
+            selectedBtn.setBackgroundResource(R.drawable.bg_option_wrong);
         }
 
         new Handler().postDelayed(() -> {
             index++;
             loadQuestion();
-        }, 1500);
+        }, 1200);
     }
-
-    // ---------------- HELPERS ----------------
 
     private Button getButtonByIndex(int index) {
         switch (index) {
-            case 0: return btnA;
-            case 1: return btnB;
-            case 2: return btnC;
-            case 3: return btnD;
-            default: return null;
+            case 0:
+                return btnA;
+            case 1:
+                return btnB;
+            case 2:
+                return btnC;
+            case 3:
+                return btnD;
+            default:
+                return null;
         }
     }
 
-    private void setOptionStyle(Button btn, int bgColor) {
-        btn.setBackgroundColor(getResources().getColor(bgColor));
-        btn.setTextColor(getResources().getColor(android.R.color.black));
-    }
-
     private void resetOptions() {
-
         btnA.setEnabled(true);
         btnB.setEnabled(true);
         btnC.setEnabled(true);
         btnD.setEnabled(true);
         btnSkip.setEnabled(true);
 
-        int defaultColor = android.R.color.holo_blue_light;
-
-        setOptionStyle(btnA, defaultColor);
-        setOptionStyle(btnB, defaultColor);
-        setOptionStyle(btnC, defaultColor);
-        setOptionStyle(btnD, defaultColor);
+        btnA.setBackgroundResource(R.drawable.bg_option);
+        btnB.setBackgroundResource(R.drawable.bg_option);
+        btnC.setBackgroundResource(R.drawable.bg_option);
+        btnD.setBackgroundResource(R.drawable.bg_option);
     }
 
     private void disableOptions() {
@@ -205,6 +200,8 @@ public class QuizActivity extends AppCompatActivity {
     private void highlightCorrectAnswer() {
         Question q = questions.get(index);
         Button correctBtn = getButtonByIndex(q.correctanswers);
-        setOptionStyle(correctBtn, android.R.color.holo_green_light);
+        if (correctBtn != null) {
+            correctBtn.setBackgroundResource(R.drawable.bg_option_correct);
+        }
     }
 }
