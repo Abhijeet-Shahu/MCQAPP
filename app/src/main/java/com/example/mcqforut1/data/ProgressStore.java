@@ -5,37 +5,21 @@ import android.content.SharedPreferences;
 
 public class ProgressStore {
 
-    private static final String PREF_NAME = "eti_progress";
+    private static final String PREF_NAME = "quiz_progress";
 
-    private static String attemptsKey(int chapter) {
-        return "ch_" + chapter + "_attempts";
+    private static String key(String subject, int chapter, String suffix) {
+        return subject + "_ch_" + chapter + "_" + suffix;
     }
 
-    private static String totalCorrectKey(int chapter) {
-        return "ch_" + chapter + "_total_correct";
-    }
-
-    private static String totalQuestionsKey(int chapter) {
-        return "ch_" + chapter + "_total_questions";
-    }
-
-    private static String bestScoreKey(int chapter) {
-        return "ch_" + chapter + "_best_score";
-    }
-
-    private static String bestTotalKey(int chapter) {
-        return "ch_" + chapter + "_best_total";
-    }
-
-    public static void recordAttempt(Context context, int chapter, int score, int total) {
+    public static void recordAttempt(Context context, String subject, int chapter, int score, int total) {
         SharedPreferences prefs = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
 
-        int attempts = prefs.getInt(attemptsKey(chapter), 0) + 1;
-        int totalCorrect = prefs.getInt(totalCorrectKey(chapter), 0) + score;
-        int totalQuestions = prefs.getInt(totalQuestionsKey(chapter), 0) + total;
+        int attempts = prefs.getInt(key(subject, chapter, "attempts"), 0) + 1;
+        int totalCorrect = prefs.getInt(key(subject, chapter, "total_correct"), 0) + score;
+        int totalQuestions = prefs.getInt(key(subject, chapter, "total_questions"), 0) + total;
 
-        int bestScore = prefs.getInt(bestScoreKey(chapter), 0);
-        int bestTotal = prefs.getInt(bestTotalKey(chapter), 0);
+        int bestScore = prefs.getInt(key(subject, chapter, "best_score"), 0);
+        int bestTotal = prefs.getInt(key(subject, chapter, "best_total"), 0);
 
         boolean shouldUpdateBest = bestTotal == 0 || (score * bestTotal) > (bestScore * total);
         if (shouldUpdateBest) {
@@ -44,22 +28,22 @@ public class ProgressStore {
         }
 
         prefs.edit()
-                .putInt(attemptsKey(chapter), attempts)
-                .putInt(totalCorrectKey(chapter), totalCorrect)
-                .putInt(totalQuestionsKey(chapter), totalQuestions)
-                .putInt(bestScoreKey(chapter), bestScore)
-                .putInt(bestTotalKey(chapter), bestTotal)
+                .putInt(key(subject, chapter, "attempts"), attempts)
+                .putInt(key(subject, chapter, "total_correct"), totalCorrect)
+                .putInt(key(subject, chapter, "total_questions"), totalQuestions)
+                .putInt(key(subject, chapter, "best_score"), bestScore)
+                .putInt(key(subject, chapter, "best_total"), bestTotal)
                 .apply();
     }
 
-    public static ChapterStats getStats(Context context, int chapter) {
+    public static ChapterStats getStats(Context context, String subject, int chapter) {
         SharedPreferences prefs = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
 
-        int attempts = prefs.getInt(attemptsKey(chapter), 0);
-        int totalCorrect = prefs.getInt(totalCorrectKey(chapter), 0);
-        int totalQuestions = prefs.getInt(totalQuestionsKey(chapter), 0);
-        int bestScore = prefs.getInt(bestScoreKey(chapter), 0);
-        int bestTotal = prefs.getInt(bestTotalKey(chapter), 0);
+        int attempts = prefs.getInt(key(subject, chapter, "attempts"), 0);
+        int totalCorrect = prefs.getInt(key(subject, chapter, "total_correct"), 0);
+        int totalQuestions = prefs.getInt(key(subject, chapter, "total_questions"), 0);
+        int bestScore = prefs.getInt(key(subject, chapter, "best_score"), 0);
+        int bestTotal = prefs.getInt(key(subject, chapter, "best_total"), 0);
 
         return new ChapterStats(attempts, totalCorrect, totalQuestions, bestScore, bestTotal);
     }

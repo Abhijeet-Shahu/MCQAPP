@@ -2,5 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="seed">#1E7CC5</color>
+    <color name="seed">#8E6D3B</color>
+    <color name="ink_light">#F8F1E7</color>
+    <color name="ink_muted">#D5C9B7</color>
+    <color name="ink_dark">#2C241C</color>
+    <color name="ink_soft">#6E6253</color>
+    <color name="surface_panel">#F7F0E4</color>
+    <color name="surface_card">#EFE5D6</color>
+    <color name="surface_highlight">#E5D4B8</color>
 </resources>

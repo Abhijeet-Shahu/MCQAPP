@@ -11,8 +11,8 @@
         android:id="@+id/tvCongrats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Great effort"
-        android:textColor="@android:color/white"
+        android:text="Great work"
+        android:textColor="@color/ink_light"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
         android:text="Score: 0 / 0"
-        android:textColor="#D8E8FF"
+        android:textColor="@color/ink_muted"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -32,20 +32,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:background="@drawable/bg_card"
-        android:text="Retry Same Chapter"
+        android:text="Retry Same Unit"
         android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btnMainMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_option"
-        android:text="Back to Main"
-        android:textAllCaps="false"
-        android:textColor="#0E294B"
+        android:textColor="@color/ink_light"
         android:textStyle="bold" />
 
     <Button
@@ -56,7 +45,18 @@
         android:background="@drawable/bg_option"
         android:text="View Progress"
         android:textAllCaps="false"
-        android:textColor="#0E294B"
+        android:textColor="@color/ink_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_option"
+        android:text="Back to Main"
+        android:textAllCaps="false"
+        android:textColor="@color/ink_dark"
         android:textStyle="bold" />
 
 </LinearLayout>

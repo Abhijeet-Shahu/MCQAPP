@@ -30,10 +30,11 @@ public class ResultActivity extends AppCompatActivity {
         int score = getIntent().getIntExtra("score", 0);
         int total = getIntent().getIntExtra("total", 0);
 
-        ProgressStore.recordAttempt(this, chapter, score, total);
+        ProgressStore.recordAttempt(this, subject, chapter, score, total);
 
-        tvCongrats.setText("Great effort, " + username + "!");
-        tvScore.setText("ETI Chapter " + chapter + " Score: " + score + " / " + total);
+        String chapterLabel = "MAN".equals(subject) ? ("Unit " + toRoman(chapter)) : ("Chapter " + chapter);
+        tvCongrats.setText("Well done, " + username + ".");
+        tvScore.setText(subject + " • " + chapterLabel + " • Score: " + score + " / " + total);
 
         btnRetry.setOnClickListener(v -> {
             Intent intent = new Intent(ResultActivity.this, QuizActivity.class);
@@ -50,6 +51,23 @@ public class ResultActivity extends AppCompatActivity {
             finish();
         });
 
-        btnViewProgress.setOnClickListener(v -> startActivity(new Intent(this, ProgressActivity.class)));
+        btnViewProgress.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ProgressActivity.class);
+            intent.putExtra("subject", subject);
+            startActivity(intent);
+        });
+    }
+
+    private String toRoman(int value) {
+        switch (value) {
+            case 3:
+                return "III";
+            case 4:
+                return "IV";
+            case 5:
+                return "V";
+            default:
+                return String.valueOf(value);
+        }
     }
 }

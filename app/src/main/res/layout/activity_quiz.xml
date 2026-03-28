@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_gradient_main"
@@ -9,18 +10,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="18dp">
 
         <TextView
             android:id="@+id/tvMeta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:background="@drawable/bg_chip"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_chip_active"
             android:paddingHorizontal="12dp"
             android:paddingVertical="8dp"
             android:text="ETI"
-            android:textColor="#123155"
+            android:textColor="@color/ink_dark"
             android:textSize="13sp"
             android:textStyle="bold" />
 
@@ -30,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:text="Time 45s"
-            android:textColor="@android:color/white"
+            android:textColor="@color/ink_light"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -38,10 +39,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            app:cardBackgroundColor="#F7FBFF"
+            app:cardBackgroundColor="@color/surface_panel"
             app:cardCornerRadius="18dp"
-            app:cardElevation="8dp"
-            xmlns:app="http://schemas.android.com/apk/res-auto">
+            app:cardElevation="6dp">
 
             <TextView
                 android:id="@+id/tvQuestion"
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:padding="18dp"
                 android:text="Question will appear here"
-                android:textColor="#0E294B"
+                android:textColor="@color/ink_dark"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
@@ -62,7 +62,7 @@
             android:background="@drawable/bg_option"
             android:text="Option A"
             android:textAllCaps="false"
-            android:textColor="#0E294B" />
+            android:textColor="@color/ink_dark" />
 
         <Button
             android:id="@+id/btnB"
@@ -72,7 +72,7 @@
             android:background="@drawable/bg_option"
             android:text="Option B"
             android:textAllCaps="false"
-            android:textColor="#0E294B" />
+            android:textColor="@color/ink_dark" />
 
         <Button
             android:id="@+id/btnC"
@@ -82,7 +82,7 @@
             android:background="@drawable/bg_option"
             android:text="Option C"
             android:textAllCaps="false"
-            android:textColor="#0E294B" />
+            android:textColor="@color/ink_dark" />
 
         <Button
             android:id="@+id/btnD"
@@ -92,7 +92,7 @@
             android:background="@drawable/bg_option"
             android:text="Option D"
             android:textAllCaps="false"
-            android:textColor="#0E294B" />
+            android:textColor="@color/ink_dark" />
 
         <Button
             android:id="@+id/btnSkip"
@@ -102,7 +102,7 @@
             android:background="@drawable/bg_card"
             android:text="Skip"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"
+            android:textColor="@color/ink_light"
             android:textStyle="bold" />
 
     </LinearLayout>

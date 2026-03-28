@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mcqforut1.data.ManQuestionBank;
 import com.example.mcqforut1.data.QuestionBank;
 import com.example.mcqforut1.model.Question;
 
@@ -56,9 +57,13 @@ public class QuizActivity extends AppCompatActivity {
         subject = getIntent().getStringExtra("subject");
         chapter = getIntent().getIntExtra("chapter", 3);
 
-        questions = QuestionBank.getETIQuestionsByChapter(chapter);
+        if ("MAN".equals(subject)) {
+            questions = ManQuestionBank.getQuestionsByChapter(chapter);
+        } else {
+            questions = QuestionBank.getETIQuestionsByChapter(chapter);
+        }
 
-        tvMeta.setText("ETI • Chapter " + chapter + " • " + questions.size() + " questions");
+        tvMeta.setText(subject + " • " + getChapterLabel() + " • " + questions.size() + " questions");
 
         loadQuestion();
 
@@ -67,6 +72,23 @@ public class QuizActivity extends AppCompatActivity {
         btnC.setOnClickListener(v -> checkAnswer(2));
         btnD.setOnClickListener(v -> checkAnswer(3));
         btnSkip.setOnClickListener(v -> skipQuestion());
+    }
+
+    private String getChapterLabel() {
+        return "MAN".equals(subject) ? ("Unit " + toRoman(chapter)) : ("Chapter " + chapter);
+    }
+
+    private String toRoman(int value) {
+        switch (value) {
+            case 3:
+                return "III";
+            case 4:
+                return "IV";
+            case 5:
+                return "V";
+            default:
+                return String.valueOf(value);
+        }
     }
 
     private void loadQuestion() {
@@ -85,7 +107,6 @@ public class QuizActivity extends AppCompatActivity {
         }
 
         Question q = questions.get(index);
-
         tvQuestion.setText(questionNo + ". " + q.questions);
         questionNo++;
 

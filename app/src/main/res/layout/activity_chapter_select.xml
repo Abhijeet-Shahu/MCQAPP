@@ -17,17 +17,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Welcome"
-            android:textColor="@android:color/white"
+            android:textColor="@color/ink_light"
             android:textSize="28sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/tvSubjectTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
-            android:text="Select ETI chapter"
-            android:textColor="#D6E4FF"
-            android:textSize="16sp" />
+            android:text="Choose your subject unit"
+            android:textColor="@color/ink_muted"
+            android:textSize="15sp" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardCh3"
@@ -36,9 +37,9 @@
             android:layout_marginTop="24dp"
             android:clickable="true"
             android:focusable="true"
-            app:cardBackgroundColor="#F8FDFF"
+            app:cardBackgroundColor="@color/surface_panel"
             app:cardCornerRadius="20dp"
-            app:cardElevation="8dp">
+            app:cardElevation="6dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,19 +48,21 @@
                 android:padding="20dp">
 
                 <TextView
+                    android:id="@+id/tvCard3Title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Chapter 3"
-                    android:textColor="#072B52"
+                    android:textColor="@color/ink_dark"
                     android:textSize="22sp"
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tvCard3Subtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Blockchain Technology"
-                    android:textColor="#416489"
+                    android:text="Subtitle"
+                    android:textColor="@color/ink_soft"
                     android:textSize="14sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -71,9 +74,9 @@
             android:layout_marginTop="14dp"
             android:clickable="true"
             android:focusable="true"
-            app:cardBackgroundColor="#F8FDFF"
+            app:cardBackgroundColor="@color/surface_panel"
             app:cardCornerRadius="20dp"
-            app:cardElevation="8dp">
+            app:cardElevation="6dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -82,19 +85,21 @@
                 android:padding="20dp">
 
                 <TextView
+                    android:id="@+id/tvCard4Title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Chapter 4"
-                    android:textColor="#072B52"
+                    android:textColor="@color/ink_dark"
                     android:textSize="22sp"
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tvCard4Subtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Immersive &amp; Sustainable Computing"
-                    android:textColor="#416489"
+                    android:text="Subtitle"
+                    android:textColor="@color/ink_soft"
                     android:textSize="14sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -106,9 +111,9 @@
             android:layout_marginTop="14dp"
             android:clickable="true"
             android:focusable="true"
-            app:cardBackgroundColor="#F8FDFF"
+            app:cardBackgroundColor="@color/surface_panel"
             app:cardCornerRadius="20dp"
-            app:cardElevation="8dp">
+            app:cardElevation="6dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -117,19 +122,21 @@
                 android:padding="20dp">
 
                 <TextView
+                    android:id="@+id/tvCard5Title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Chapter 5"
-                    android:textColor="#072B52"
+                    android:textColor="@color/ink_dark"
                     android:textSize="22sp"
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tvCard5Subtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Digital Forensics &amp; Ethical Hacking"
-                    android:textColor="#416489"
+                    android:text="Subtitle"
+                    android:textColor="@color/ink_soft"
                     android:textSize="14sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -140,11 +147,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             android:background="@drawable/bg_card"
-            android:text="View Chapter Progress"
+            android:text="View Progress"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"
+            android:textColor="@color/ink_light"
             android:textStyle="bold" />
 
     </LinearLayout>
 </ScrollView>
-
