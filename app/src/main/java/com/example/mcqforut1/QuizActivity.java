@@ -1,5 +1,7 @@
 package com.example.mcqforut1;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -63,7 +65,7 @@ public class QuizActivity extends AppCompatActivity {
             questions = QuestionBank.getETIQuestionsByChapter(chapter);
         }
 
-        tvMeta.setText(subject + " • " + getChapterLabel() + " • " + questions.size() + " questions");
+        tvMeta.setText(subject + " - " + getChapterLabel() + " - " + questions.size() + " questions");
 
         loadQuestion();
 
@@ -166,14 +168,18 @@ public class QuizActivity extends AppCompatActivity {
         Button correctBtn = getButtonByIndex(q.correctanswers);
         Button selectedBtn = getButtonByIndex(selectedOption);
 
-        if (correctBtn != null) {
-            correctBtn.setBackgroundResource(R.drawable.bg_option_correct);
-        }
-
         if (selectedOption == q.correctanswers) {
             score++;
-        } else if (selectedBtn != null) {
-            selectedBtn.setBackgroundResource(R.drawable.bg_option_wrong);
+            if (correctBtn != null) {
+                applyOptionState(correctBtn, "correct");
+            }
+        } else {
+            if (selectedBtn != null) {
+                applyOptionState(selectedBtn, "wrong");
+            }
+            if (correctBtn != null) {
+                applyOptionState(correctBtn, "correct");
+            }
         }
 
         new Handler().postDelayed(() -> {
@@ -204,10 +210,10 @@ public class QuizActivity extends AppCompatActivity {
         btnD.setEnabled(true);
         btnSkip.setEnabled(true);
 
-        btnA.setBackgroundResource(R.drawable.bg_option);
-        btnB.setBackgroundResource(R.drawable.bg_option);
-        btnC.setBackgroundResource(R.drawable.bg_option);
-        btnD.setBackgroundResource(R.drawable.bg_option);
+        applyOptionState(btnA, "default");
+        applyOptionState(btnB, "default");
+        applyOptionState(btnC, "default");
+        applyOptionState(btnD, "default");
     }
 
     private void disableOptions() {
@@ -222,7 +228,27 @@ public class QuizActivity extends AppCompatActivity {
         Question q = questions.get(index);
         Button correctBtn = getButtonByIndex(q.correctanswers);
         if (correctBtn != null) {
-            correctBtn.setBackgroundResource(R.drawable.bg_option_correct);
+            applyOptionState(correctBtn, "correct");
         }
+    }
+
+    private void applyOptionState(Button button, String state) {
+        int color;
+        int textColor;
+
+        if ("correct".equals(state)) {
+            color = Color.parseColor("#2E7D32");
+            textColor = Color.WHITE;
+        } else if ("wrong".equals(state)) {
+            color = Color.parseColor("#C62828");
+            textColor = Color.WHITE;
+        } else {
+            color = Color.parseColor("#F7F0E4");
+            textColor = getColor(R.color.ink_dark);
+        }
+
+        button.setBackgroundResource(R.drawable.bg_option);
+        button.setBackgroundTintList(ColorStateList.valueOf(color));
+        button.setTextColor(textColor);
     }
 }

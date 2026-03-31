@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -23,7 +23,8 @@
             android:text="ETI"
             android:textColor="@color/ink_dark"
             android:textSize="13sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:backgroundTint="@null" />
 
         <TextView
             android:id="@+id/tvTimer"
@@ -62,7 +63,8 @@
             android:background="@drawable/bg_option"
             android:text="Option A"
             android:textAllCaps="false"
-            android:textColor="@color/ink_dark" />
+            android:textColor="@color/ink_dark"
+            android:backgroundTint="@null" />
 
         <Button
             android:id="@+id/btnB"
@@ -72,7 +74,8 @@
             android:background="@drawable/bg_option"
             android:text="Option B"
             android:textAllCaps="false"
-            android:textColor="@color/ink_dark" />
+            android:textColor="@color/ink_dark"
+            android:backgroundTint="@null" />
 
         <Button
             android:id="@+id/btnC"
@@ -82,7 +85,8 @@
             android:background="@drawable/bg_option"
             android:text="Option C"
             android:textAllCaps="false"
-            android:textColor="@color/ink_dark" />
+            android:textColor="@color/ink_dark"
+            android:backgroundTint="@null" />
 
         <Button
             android:id="@+id/btnD"
@@ -92,7 +96,8 @@
             android:background="@drawable/bg_option"
             android:text="Option D"
             android:textAllCaps="false"
-            android:textColor="@color/ink_dark" />
+            android:textColor="@color/ink_dark"
+            android:backgroundTint="@null" />
 
         <Button
             android:id="@+id/btnSkip"
